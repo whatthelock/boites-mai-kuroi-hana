@@ -3,7 +3,7 @@
 
 - ### Dom
 - ### Myriam Berbiche
-- ### Jean-Claude zéphyr
+- ### Jean-Chrollo zephyr
 - ### Loic Delorme
 
 
