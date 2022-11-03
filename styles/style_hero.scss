@@ -1,0 +1,56 @@
+@use "partials/variables";
+// make sure to change link
+
+body {
+    margin: 0px;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F9FFF7; // use variables
+
+    .logo_wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .logo {
+            width: 25vw;
+            height: 40vh;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+
+    .formeJaune {
+        position: absolute;
+        right: -1vw;
+        top: -17vh;
+    }
+    
+    .formeBrun {
+        position: absolute;
+        bottom: -12vh;
+        left: 23vw;
+    }
+    
+    .formeRose {
+        position: absolute;
+        top: 48vh;
+        left: -7vw;
+    }
+    
+    .formeVert {
+        position: absolute;
+        top: -20vh;
+        left: -10vw;
+    }
+    
+    
+}
