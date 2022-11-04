@@ -10,6 +10,7 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: #F9FFF7; // use variables
+    //border: 5px solid red;
 
     .hero__logo__wrapper {
         width: 100%;
@@ -24,34 +25,37 @@ body {
             img {
                 width: 100%;
             }
+            h2 {
+                margin: 0px;
+            }
         }
     }
     
 
     .hero__forme--jaune {
-        position: absolute;
-        right: -1vw;
-        top: -17vh;
+        position: relative;
+        left: 70vw;
+        bottom: 115vh;
         //z-index: -1;
     }
     
     .hero__forme--brun {
-        position: absolute;
-        bottom: -12vh;
+        position: relative;
         left: 23vw;
+        bottom: 140vh;
         //z-index: -1;
     }
     
     .hero__forme--rose {
-        position: absolute;
-        top: 48vh;
-        left: -7vw;
+        position: relative;
+        right: 7vw;
+        bottom: 200vh;
     }
     
     .hero__forme--vert {
-        position: absolute;
-        top: -20vh;
+        position: relative;
         left: -10vw;
+        bottom: 335vh;
     }
     
     

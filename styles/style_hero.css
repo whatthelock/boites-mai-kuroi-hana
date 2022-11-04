@@ -23,23 +23,26 @@ body {
 .hero .hero__logo__wrapper .hero__logo--logo img {
   width: 100%;
 }
+.hero .hero__logo__wrapper .hero__logo--logo h2 {
+  margin: 0px;
+}
 .hero .hero__forme--jaune {
-  position: absolute;
-  right: -1vw;
-  top: -17vh;
+  position: relative;
+  left: 70vw;
+  bottom: 115vh;
 }
 .hero .hero__forme--brun {
-  position: absolute;
-  bottom: -12vh;
+  position: relative;
   left: 23vw;
+  bottom: 140vh;
 }
 .hero .hero__forme--rose {
-  position: absolute;
-  top: 48vh;
-  left: -7vw;
+  position: relative;
+  right: 7vw;
+  bottom: 200vh;
 }
 .hero .hero__forme--vert {
-  position: absolute;
-  top: -20vh;
+  position: relative;
   left: -10vw;
+  bottom: 335vh;
 }/*# sourceMappingURL=style_hero.css.map */
