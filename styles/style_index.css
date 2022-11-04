@@ -1,1 +1,78 @@
-/*# sourceMappingURL=style_index.css.map */
+* {
+  box-sizing: border-box;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 0 5% 4% 5%;
+}
+.content h2 {
+  text-align: center;
+  font-size: 3.6vw;
+  margin-bottom: 0;
+}
+.content .content--graphs {
+  margin-top: 6vw;
+  display: flex;
+  justify-content: space-around;
+}
+.content .content--graphs .graph--wrapper {
+  font-size: 1.5vw;
+  width: 20vw;
+}
+.content .content--graphs .graph--wrapper .content--graphs--graph {
+  padding: 2.7vw;
+  width: 100%;
+  aspect-ratio: 6/7;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.238);
+  border-radius: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+.content .content--graphs .graph--wrapper .content--graphs--graph img {
+  width: 100%;
+}
+.content .content--produit {
+  margin-top: 6vw;
+}
+
+.main-swiper {
+  width: 100%;
+  margin-top: 6vw;
+  margin-bottom: 100px;
+}
+.main-swiper .swiper-slide a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 27vw;
+  text-decoration: none;
+  color: inherit;
+}
+.main-swiper .swiper-slide a img {
+  width: 80%;
+}
+
+.class {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  bottom: 9%;
+  z-index: 2;
+  position: absolute;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  position: absolute;
+}/*# sourceMappingURL=style_index.css.map */
