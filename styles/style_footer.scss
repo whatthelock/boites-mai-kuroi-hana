@@ -14,32 +14,56 @@ footer {
         display: flex;
         flex-flow: column;
         align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 0px;
+
+        .footer__content--form--btn {
+            color: white;
+            background-color: variables.$vert;
+            border: none;
+            padding: 5px;
+            border-radius: 5px 0px 5px 0px;
+        }
     }
 
     .footer__forme--vert {
         position: relative;
-        right: -85vw;
-        bottom: -70vh;
+        right: -90vw;
+        bottom: 80vh;
     }
     
     .footer__forme--jaune {
         position: relative;
-        left: -5vw;
-        bottom: 30vh;
+        left: -2vw;
+        bottom: 170vh;
     }
     
     .footer__forme--brun {
         position: relative;
-        bottom: 40vh;
+        bottom: 250vh;
         left: -10vw;
     }
     
     .footer__forme--arbre--tronc {
-        position: absolute;
-        bottom: -100vh;
+        position: relative;
+        bottom: 305vh;
+        left: 10vw;
     }
     
     .footer__forme--arbre--feuilles {
-        position: absolute;
+        position: relative;
+        bottom: 355vh;
+        left: 7vw;
+    }
+
+    .footer__logo {
+        position: relative;
+        bottom: 390vh;
+        left: 80vw;
+        width: 20%;
+        img {
+            width: 100%;
+        }
     }
 }
