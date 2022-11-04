@@ -1,3 +1,62 @@
+@use "partials/variables";
+
 body{
-    font-size: 10px;
+    font-size: 20px;
+}
+
+.produit{
+    padding: 4vw;
+}
+
+.produit_image_resume{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.produit_image_container{
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 40vw;
+}
+
+.produit_image{
+    width: 100%;
+}
+
+.produit_survol{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50vw;
+}
+
+.produit_resume{
+    width: 80%;
+}
+
+.produit_bouton_ajouter{
+    background-color: #F37364;
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    color: white;
+    width: 10vw;
+    height: 3vw;
+    font-size: 18px;
+}
+
+.produit_nombre_quantite{
+    background-color: variables.$background;
+    width: 3vw;
+    height: 2vw;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.produit_details{
+    margin-top: 10vh;
 }

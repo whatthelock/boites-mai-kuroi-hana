@@ -12,27 +12,31 @@
 
     <body>
         <main>
-            <section>
-                <div class="produit_image">
-                    <img class="produit_description_image" src="sources/01_medias/oia_pointu.png">
-                </div>
-                <div class="produit_survol">
-                    <b><p class="produit_titre">Oïa pointu</p></b><br>
-                    <p class="produit_resume">Le pointilleux, le précis, celui qui répond à nos petites envies.      
-                        Parfait à l’intérieur pour nos petites plantes dans des pots de 12 pouces et plus. Arrosage une fois semaine.</p>
-                    <p class="produit_prix">26,95$</p>
-                    <form class="produit_quantite">
-                        <label for="quantite">Quantité:</label><br>
-                        <input type="text" id="nombre" value="1"><br><br>
-                        <input type="submit" value="Ajouter">
-                      </form>
+            <section class="produit">
+                <div class="produit_image_resume">
+                    <div class="produit_survol">
+                        <h2 class="produit_titre">Oïa pointu</h2><br>
+                        <p class="produit_resume">Le pointilleux, le précis, celui qui répond à nos petites envies.      
+                            Parfait à l’intérieur pour nos petites plantes dans des pots de 12 pouces et plus. Arrosage une fois semaine.</p>
+                        <h4 class="produit_prix">26,95$</h4>
+                        <form class="produit_quantite">
+                            <label for="quantite">Quantité:</label><br>
+                            <input type="number" id="nombre" value="1" min="0" class="produit_nombre_quantite"><br><br>
+                            <input type="submit" value="Ajouter" class="produit_bouton_ajouter">
+                          </form>
+                    </div>
+                    <div class="produit_image_container">
+                        <img class="produit_image" src="sources/01_medias/oia_pointu.png">
+                    </div>
                 </div>
                 <div class="produit_details">
+                    <h4>Détails</h4>
                     <p class="produit_description">La porosité de la jarre permet une irrigation adaptée aux besoins de la plante, tout comme dans la nature, ce sont les racines qui se rendent à la source d'eau et non l'eau de pluie ou d'arrosage en surface qui se rend aux racines.
                         Elle permet aussi une économie d'eau allant de 50% à 70% du fait de la diminution des pertes par évaporation.
                         Grâce à l'irrigation en profondeur, on diminue les mauvaises herbes et les maladies fongiques.
-                        Très simple d'utilisation, une fois enterré, remplissez le Oïa 1 à 2 fois par semaine et laissez vos cultures s'épanouir sans stress hydrique.
-                        * Les conditions climatiques, l'exposition, le type de terre ou de pots peuvent faire varier la durée de l'autonomie.</p>
+                        Très simple d'utilisation, une fois enterré, remplissez le Oïa 1 à 2 fois par semaine et laissez vos cultures s'épanouir sans stress hydrique.</p>
+                    <p>* Les conditions climatiques, l'exposition, le type de terre ou de pots peuvent faire varier la durée de l'autonomie.</p>
+                    <i><p>Pour plante de 12po. et plus</p><p>23 x 8 cm</p><p>400 mL</p></i>
                 </div>
             </section>
         </main>
