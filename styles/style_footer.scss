@@ -1,21 +1,45 @@
 @use "partials/variables";
 
-.footer__forme--vert {
-    position: absolute;
-}
+footer {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: static;
+    bottom: 0px;
+    border: 5px solid red;
 
-.footer__forme--jaune {
-    position: absolute;
-}
+    .footer__content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
 
-.footer__forme--brun {
-    position: absolute;
-}
-
-.footer__forme--arbre--tronc {
-    position: absolute;
-}
-
-.footer__forme--arbre--feuilles {
-    position: absolute;
+    .footer__forme--vert {
+        position: relative;
+        right: -85vw;
+        bottom: -70vh;
+    }
+    
+    .footer__forme--jaune {
+        position: relative;
+        left: -5vw;
+        bottom: 30vh;
+    }
+    
+    .footer__forme--brun {
+        position: relative;
+        bottom: 40vh;
+        left: -10vw;
+    }
+    
+    .footer__forme--arbre--tronc {
+        position: absolute;
+        bottom: -100vh;
+    }
+    
+    .footer__forme--arbre--feuilles {
+        position: absolute;
+    }
 }
