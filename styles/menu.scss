@@ -1,0 +1,24 @@
+.navbar{
+    background-color:#4F7A41;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    display: flex;
+    max-width: 10vw;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
