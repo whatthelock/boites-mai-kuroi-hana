@@ -15,6 +15,9 @@ footer .footer__content {
   text-align: center;
   margin-top: 0px;
 }
+footer .footer__content h4 {
+  font-size: 3vw;
+}
 footer .footer__content .footer__content--form--btn {
   color: white;
   background-color: #4F7A41;
