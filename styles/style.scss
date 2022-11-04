@@ -3,7 +3,7 @@
 @font-face {
     src: url("/sources/02_font/Mermaid1001.woff2") format("woff2");
     font-family: "mermaid";
-  }
+}
 
 @font-face {
     src: url("/sources/02_font/MADE\ Gentle\ PERSONAL\ USE.woff2") format("woff2");
@@ -13,12 +13,12 @@
 @font-face {
     src: url("/sources/02_font/Roboto-Regular.woff2") format("woff2");
     font-family: "roboto";
-  }
+}
 
 body {
     background-color: variables.$background;
     font-family: 'roboto';
-    font-size: 3vw;
+    font-size: 1vw;
     width: 100%;
     margin: 0px;
 }
@@ -34,7 +34,7 @@ h1 {
     font-family: "mermaid";
 }
 
-h2 {
+h2, h3, h3, h4, h5 {
     font-family: "gentle";
 }
 
