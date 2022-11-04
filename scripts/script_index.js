@@ -18,7 +18,7 @@ const swiper = new Swiper('.main-swiper', {
 
     freeMode: false,
 
-    speed: 3000,
+    speed: 1000,
 
     autoplay: {
         delay: 2000,

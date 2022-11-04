@@ -50,39 +50,45 @@
     width: 100%;
     margin-top: 6vw;
     margin-bottom: 100px;
-
+    
 
     .swiper-slide{
         a{
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            height: 27vw;
+            height: 28vw;
             text-decoration: none;
             color: inherit;
-
+            .big{
+                    transform: scale(1.1);
+                }
             img{
                 width: 80%;
+            }
+            .class{
+                text-align: center;
+                width: 100%;
+                bottom: 6%;
+                z-index: 2;
+                position: absolute;
+
+                h2{
+                    color: #F37364;
+                    font-size: 3vw;
+                }
+            }
+
+            .title{
+                font-size: 1.5vw;
+                text-align: center;
+                width: 100%;
+                bottom: 0;
+                z-index: 2;
+                position: absolute;
             }
         }
     }
     
 }
 
-.class{
-    font-size: 40px;
-    text-align: center;
-    width: 100%;
-    bottom: 9%;
-    z-index: 2;
-    position: absolute;
-}
-
-.title{
-    font-size: 48px;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    z-index: 2;
-    position: absolute;
-}
