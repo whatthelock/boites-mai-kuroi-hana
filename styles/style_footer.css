@@ -4,7 +4,6 @@ footer {
   overflow: hidden;
   position: static;
   bottom: 0px;
-  border: 5px solid red;
 }
 footer .footer__content {
   width: 100%;

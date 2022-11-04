@@ -6,7 +6,7 @@ footer {
     overflow: hidden;
     position: static;
     bottom: 0px;
-    border: 5px solid red;
+    //border: 5px solid red;
 
     .footer__content {
         width: 100%;
@@ -17,6 +17,7 @@ footer {
         justify-content: space-around;
         text-align: center;
         margin-top: 0px;
+        
 
         .footer__content--form--btn {
             color: white;
