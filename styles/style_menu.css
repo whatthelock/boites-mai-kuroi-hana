@@ -6,9 +6,6 @@
   color: white;
   text-decoration: none;
   text-transform: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .logo {
@@ -21,4 +18,9 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style_menu.css.map */
