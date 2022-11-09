@@ -17,6 +17,7 @@ footer .footer__content {
 }
 footer .footer__content h4 {
   font-size: 3vw;
+  color: #f37364;
 }
 footer .footer__content .footer__content--form--btn {
   color: white;
@@ -52,7 +53,7 @@ footer .footer__forme--arbre--feuilles {
 }
 footer .footer__logo {
   position: relative;
-  bottom: 390vh;
+  bottom: 395vh;
   left: 80vw;
   width: 20%;
 }

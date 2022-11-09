@@ -19,6 +19,7 @@ footer {
         margin-top: 0px;
         h4 {
             font-size: 3vw;
+            color: variables.$orange;
         }
 
 
@@ -63,7 +64,7 @@ footer {
 
     .footer__logo {
         position: relative;
-        bottom: 390vh;
+        bottom: 395vh;
         left: 80vw;
         width: 20%;
         img {
