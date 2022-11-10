@@ -6,20 +6,21 @@ body {
 }
 
 .hero {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     background-color: #F9FFF7; // use variables
     //border: 5px solid red;
 
-    .hero__logo__wrapper {
+    .hero__content {
         width: 100%;
         height: 100%;
         display: flex;
+        flex-flow: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        .hero__logo--logo {
+        .hero__content--logo {
             width: 25vw;
             height: 40vh;
             img {
@@ -28,6 +29,10 @@ body {
             h2 {
                 margin: 0px;
             }
+        }
+        .hero__content--fleche {
+            position: relative;
+            top: 25vh;
         }
     }
     

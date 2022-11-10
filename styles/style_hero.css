@@ -1,48 +1,73 @@
+@use "partials/variables";
 body {
   margin: 0px;
 }
 
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   background-color: #F9FFF7;
 }
-.hero .hero__logo__wrapper {
+
+.hero .hero__content {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
-.hero .hero__logo__wrapper .hero__logo--logo {
+
+.hero .hero__content .hero__content--logo {
   width: 25vw;
   height: 40vh;
 }
-.hero .hero__logo__wrapper .hero__logo--logo img {
+
+.hero .hero__content .hero__content--logo img {
   width: 100%;
 }
-.hero .hero__logo__wrapper .hero__logo--logo h2 {
+
+.hero .hero__content .hero__content--logo h2 {
   margin: 0px;
 }
+
+.hero .hero__content .hero__content--fleche {
+  position: relative;
+  top: 25vh;
+}
+
 .hero .hero__forme--jaune {
   position: relative;
   left: 70vw;
   bottom: 115vh;
 }
+
 .hero .hero__forme--brun {
   position: relative;
   left: 23vw;
   bottom: 140vh;
 }
+
 .hero .hero__forme--rose {
   position: relative;
   right: 7vw;
   bottom: 200vh;
 }
+
 .hero .hero__forme--vert {
   position: relative;
   left: -10vw;
   bottom: 335vh;
-}/*# sourceMappingURL=style_hero.css.map */
+}
+/*# sourceMappingURL=style_hero.css.map */
