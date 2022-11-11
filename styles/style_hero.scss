@@ -25,6 +25,7 @@ body {
             height: 40vh;
             img {
                 width: 100%;
+                z-index: 5;
             }
             h2 {
                 margin: 0px;
@@ -33,14 +34,15 @@ body {
         .hero__content--fleche {
             position: relative;
             top: 25vh;
+            z-index: 5;
         }
     }
     
 
     .hero__forme--jaune {
         position: relative;
-        left: 70vw;
-        bottom: 115vh;
+        left: 60vw;
+        bottom: 120vh;
         //z-index: -1;
     }
     
@@ -61,6 +63,7 @@ body {
         position: relative;
         left: -10vw;
         bottom: 335vh;
+        z-index: 0;
     }
     
     
