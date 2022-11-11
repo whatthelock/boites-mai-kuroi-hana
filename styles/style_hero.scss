@@ -21,7 +21,9 @@ body {
         align-items: center;
         text-align: center;
         &__logo {
-            width: 25vw;
+            display: block;
+            z-index: 2;
+            width: 90vw;
             height: 40vh;
             img {
                 width: 100%;
@@ -29,11 +31,12 @@ body {
             }
             h2 {
                 margin: 0px;
+                font-size: 3vh;
             }
         }
         &__fleche {
             position: relative;
-            top: 25vh;
+            top: 20vh;
             z-index: 5;
         }
     }
@@ -41,28 +44,111 @@ body {
 
     &__forme_jaune {
         position: relative;
-        left: 70vw;
+        left: -70vw;
         bottom: 115vh;
-        //z-index: -1;
+        z-index: 0;
+        width: 300%;
+        svg {
+            width: 100%;
+        }
     }
     
     &__forme_brun {
         position: relative;
         left: 23vw;
-        bottom: 140vh;
-        //z-index: -1;
+        bottom: 1300px;
+        z-index: 0;
+        width: 150%;
+        svg {
+            width: 100%;
+        }
     }
     
     &__forme_rose {
         position: relative;
-        right: 7vw;
-        bottom: 200vh;
+        right: 30vw;
+        bottom: 225vh;
+        z-index: 0;
+        svg {
+            width: 100%;
+        }
     }
     
     &__forme_vert {
+        width: 150%;
         position: relative;
-        left: -10vw;
-        bottom: 335vh;
+        left: -30vw;
+        bottom: 3200px;;
         z-index: 0;
+        svg {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        &__content {
+            &__logo {
+                h2 {
+                    font-size: 5vh;
+                }
+            }
+        }
+
+        &__forme_jaune {
+            left: -70vw;
+            bottom: 115vh;
+        }
+        
+        &__forme_brun {
+            left: -10vw;
+            bottom: 160vh;
+        }
+        
+        &__forme_rose {
+            right: 40vw;
+            bottom: 240vh;
+        }
+        
+        &__forme_vert {
+            left: -50vw;
+            bottom: 3200px;;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        &__content {
+            &__logo {
+                width: 40vw;
+                h2 {
+                    font-size: 4vh;
+                }
+            }
+        }
+        &__forme_jaune {
+            width: 60%;
+            left: 55vw;
+            bottom: 120vh;
+        }
+        
+        &__forme_brun {
+            width: 70%;
+            left: 0vw;
+            bottom: 155vh;
+        }
+        
+        &__forme_rose {
+            right: 45vw;
+            bottom: 230vh;
+        }
+        
+        &__forme_vert {
+            width: 80%;
+            left: -10vw;
+            bottom: 3100px;
+        }
     }
 }
