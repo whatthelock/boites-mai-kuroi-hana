@@ -28,9 +28,7 @@
   width: 100%;
   aspect-ratio: 6/7;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.238);
-  border-radius: 3%;
-  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   align-items: center;
   justify-content: center;
   margin-bottom: 15%;
