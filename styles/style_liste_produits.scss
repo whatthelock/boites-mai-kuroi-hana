@@ -4,12 +4,12 @@
 body{
     background-color: #F9FFF7;
 }
-.container-boite{
+.boite__container{
     display: flex;
     flex-wrap: wrap; 
 }
 
-.holder-boite{
+.boite__holder{
     display: flex;
     width: 25%; 
 }
@@ -40,12 +40,12 @@ body{
     -moz-box-shadow: 6px 10px 26px 0px rgba(0,0,0,0.26);
 }
 
-.img-boite{
+.boite__image{
     width: 100%;
     border-top-left-radius: 40px;
 }
 
-.acheter{
+.boite__bouton_acheter{
     background-color: #F37364;
     padding: 1vh;
     border-radius: 40px;
@@ -54,26 +54,19 @@ body{
     margin: 1em;
 }
 
-.titre-boite{
+.boite__titre{
     margin: 1vw;
 }
 
-.txt-boite{
+.boite__texte{
     margin: 1vw 1vw 0.1vw 0.5vw;
     margin-left: 1vw;
     margin-right: 1vw;
     padding: 0;
 }
 
-.prix-boite{
+.boite__prix{
     display: flex;
     justify-content: flex-end;
     margin: 1em;
-}
-
-h1{
-    font-family: 'Roboto', sans-serif;
-}
-p{
-    font-family: 'Roboto', sans-serif;
 }
