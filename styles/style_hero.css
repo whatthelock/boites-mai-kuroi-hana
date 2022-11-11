@@ -23,6 +23,7 @@ body {
 }
 .hero .hero__content .hero__content--logo img {
   width: 100%;
+  z-index: 5;
 }
 .hero .hero__content .hero__content--logo h2 {
   margin: 0px;
@@ -30,11 +31,12 @@ body {
 .hero .hero__content .hero__content--fleche {
   position: relative;
   top: 25vh;
+  z-index: 5;
 }
 .hero .hero__forme--jaune {
   position: relative;
-  left: 70vw;
-  bottom: 115vh;
+  left: 60vw;
+  bottom: 120vh;
 }
 .hero .hero__forme--brun {
   position: relative;
@@ -50,4 +52,5 @@ body {
   position: relative;
   left: -10vw;
   bottom: 335vh;
+  z-index: 0;
 }/*# sourceMappingURL=style_hero.css.map */

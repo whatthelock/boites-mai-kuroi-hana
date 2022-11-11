@@ -14,46 +14,53 @@
 
 <body>
   <header>
-    <nav class='navbar navbar-dark fixed-top'>
-      <div class='container'>
-        <div id='mainNav' class='navbar-collapse'>
-          <ul>
-            <li><a href="index.html">
-                <img src="/sources/01_medias/logo_mai.png" class="logo" alt="">
-              </a></li>
-            <li> <a href="#" class="nav-link">Boutique</a>
-            </li>
-            <li> <a href="#" class="nav-link">Qui sommes nous ?</a>
-            </li>
-          </ul>
-          <a class='navbar-brand' href='#'>
-          </a>
+    <nav class='navbar'>
+        <div class='navbar__container'>
+            <div class='container__collapse'>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="sources/01_medias/logo_mai.png" class="navbar__logo" alt="">
+                        </a>
+                    </li>
+                    <div class="navbar__pages">
+                        <li> 
+                            <a href="#" class="navbar__lien_pages">Produits</a>
+                        </li>
+                        <li> 
+                            <a href="#" class="navbar__lien_pages">Qui sommes nous?</a>
+                        </li>
+                        <li> 
+                            <a href="#" class="navbar__lien_pages">Blog</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
   <main>
     <section class="produit">
-      <div class="produit_image_resume">
-        <div class="produit_survol">
-          <h2 class="produit_titre">Oïa pointu</h2><br>
-          <p class="produit_resume">Le pointilleux, le précis, celui qui répond à nos petites envies.
+      <div class="produit__image_resume">
+        <div class="produit__survol">
+          <h2 class="produit__titre">Oïa pointu</h2><br>
+          <p class="produit__resume">Le pointilleux, le précis, celui qui répond à nos petites envies.
             Parfait à l’intérieur pour nos petites plantes dans des pots de 12 pouces et plus. Arrosage une fois
             semaine.</p>
-          <h4 class="produit_prix">26,95$</h4>
-          <form class="produit_quantite">
+          <h4 class="produit__prix">26,95$</h4>
+          <form class="produit__quantite">
             <label for="quantite">Quantité:</label><br>
-            <input type="number" id="nombre" value="1" min="0" class="produit_nombre_quantite"><br><br>
-            <input type="submit" value="Ajouter" class="produit_bouton_ajouter">
+            <input type="number" id="nombre" value="1" min="0" class="produit__nombre_quantite"><br><br>
+            <input type="submit" value="Ajouter" class="produit__bouton_ajouter">
           </form>
         </div>
-        <div class="produit_image_container">
-          <img class="produit_image" src="sources/01_medias/oia_pointu.png">
+        <div class="produit__image_container">
+          <img class="produit__image" src="sources/01_medias/oia_pointu.png">
         </div>
       </div>
-      <div class="produit_details">
+      <div class="produit__details">
         <h4>Détails</h4>
-        <p class="produit_description">La porosité de la jarre permet une irrigation adaptée aux besoins de la plante,
+        <p class="produit__description">La porosité de la jarre permet une irrigation adaptée aux besoins de la plante,
           tout comme dans la nature, ce sont les racines qui se rendent à la source d'eau et non l'eau de pluie ou
           d'arrosage en surface qui se rend aux racines.
           Elle permet aussi une économie d'eau allant de 50% à 70% du fait de la diminution des pertes par évaporation.

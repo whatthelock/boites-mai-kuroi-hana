@@ -2,13 +2,13 @@
   background-color: #4F7A41;
 }
 
-.navbar_lien_pages {
+.navbar__lien_pages {
   color: #F9FFF7;
   text-decoration: none;
   text-transform: none;
 }
 
-.navbar_logo {
+.navbar__logo {
   display: flex;
   max-width: 10vw;
   align-items: center;
@@ -23,13 +23,13 @@ ul {
   justify-content: space-between;
 }
 
-.pages_menu {
+.navbar__pages {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.pages_menu li {
+.navbar__pages li {
   margin: 2.2vw 5vw;
 }
 
