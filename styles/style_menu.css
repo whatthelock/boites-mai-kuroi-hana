@@ -2,25 +2,37 @@
   background-color: #4F7A41;
 }
 
-.nav-link {
-  color: white;
+.navbar_lien_pages {
+  color: #F9FFF7;
   text-decoration: none;
   text-transform: none;
 }
 
-.logo {
+.navbar_logo {
   display: flex;
   max-width: 10vw;
   align-items: center;
+  margin-left: 2.2vw;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu {
+.pages_menu {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pages_menu li {
+  margin: 2.2vw 5vw;
+}
+
+.nav-link:hover {
+  color: #f37364;
 }/*# sourceMappingURL=style_menu.css.map */

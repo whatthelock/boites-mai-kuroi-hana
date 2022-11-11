@@ -1,13 +1,13 @@
 @font-face {
-  src: url("/sources/02_font/Mermaid1001.woff2") format("woff2");
+  src: url("sources/02_font/Mermaid1001.woff2") format("woff2");
   font-family: "mermaid";
 }
 @font-face {
-  src: url("/sources/02_font/MADE Gentle PERSONAL USE.woff2") format("woff2");
+  src: url("sources/02_font/MADE Gentle PERSONAL USE.woff2") format("woff2");
   font-family: "gentle";
 }
 @font-face {
-  src: url("/sources/02_font/Roboto-Regular.woff2") format("woff2");
+  src: url("sources/02_font/Roboto-Regular.woff2") format("woff2");
   font-family: "roboto";
 }
 body {
