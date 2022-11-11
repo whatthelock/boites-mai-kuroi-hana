@@ -2,19 +2,33 @@
 
 .navbar{
     background-color: variables.$vert;
-}
 
-.navbar__lien_pages{
-    color: variables.$background;
-    text-decoration: none;
-    text-transform: none;
-}
+    &__lien_pages{
+        color: variables.$background;
+        text-decoration: none;
+        text-transform: none;
 
-.navbar__logo{
-    display: flex;
-    max-width: 10vw;
-    align-items: center;
-    margin-left: 2.2vw;
+        &:hover{
+            color: variables.$orange;
+        }
+    }
+
+    &__logo{
+        display: flex;
+        max-width: 10vw;
+        align-items: center;
+        margin-left: 2.2vw;
+    }
+
+    &__pages{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li{
+            margin: 2.2vw 5vw;
+        }
+    }
 }
 
 ul{
@@ -23,18 +37,4 @@ ul{
     padding: 0;
     display: flex;
     justify-content: space-between;
-}
-
-.navbar__pages{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navbar__pages li{
-    margin: 2.2vw 5vw;
-}
-
-.navbar__lien_pages:hover{
-    color: variables.$orange;
 }
