@@ -22,13 +22,25 @@ footer {
             color: variables.$orange;
         }
 
+    .footer__content--form--txtInput{
+        border: 2px none;
+        border-radius: 4px;
+        padding: 1px 1vw;
+        height: 5vh;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; align-items: center;
+        width: 20vw;
+    }
 
         .footer__content--form--btn {
             color: white;
             background-color: variables.$vert;
             border: none;
             padding: 5px;
-            border-radius: 5px 0px 5px 0px;
+            background-color: variables.$vert;
+            height: 5vh;
+            width: 8vw;
+            border-radius: 25px 0px 25px 0px;
+            font-size: 1vw;
         }
     }
 
@@ -71,4 +83,11 @@ footer {
             width: 100%;
         }
     }
+
+    .footer__content--link{
+        font-size: 1.3vw;
+        padding: 1px 5vw;
+    
+    }
+
 }
