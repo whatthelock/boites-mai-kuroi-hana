@@ -7,86 +7,91 @@ footer {
     position: static;
     bottom: 0px;
     //border: 5px solid red;
-
-    .footer__content {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-        margin-top: 0px;
-        h4 {
-            font-size: 3vw;
-            color: variables.$orange;
-        }
-
-    .footer__content--form--txtInput{
-        border: 2px none;
-        border-radius: 4px;
-        padding: 1px 1vw;
-        height: 5vh;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; align-items: center;
-        width: 20vw;
-    }
-
-        .footer__content--form--btn {
-            color: white;
-            background-color: variables.$vert;
-            border: none;
-            padding: 5px;
-            background-color: variables.$vert;
-            height: 5vh;
-            width: 8vw;
-            border-radius: 25px 0px 25px 0px;
-            font-size: 1vw;
-        }
-    }
-
-    .footer__forme--vert {
-        position: relative;
-        right: -90vw;
-        bottom: 80vh;
-    }
-    
-    .footer__forme--jaune {
-        position: relative;
-        left: -2vw;
-        bottom: 170vh;
-    }
-    
-    .footer__forme--brun {
-        position: relative;
-        bottom: 250vh;
-        left: -10vw;
-    }
-    
-    .footer__forme--arbre--tronc {
-        position: relative;
-        bottom: 305vh;
-        left: 10vw;
-    }
-    
-    .footer__forme--arbre--feuilles {
-        position: relative;
-        bottom: 355vh;
-        left: 7vw;
-    }
-
-    .footer__logo {
-        position: relative;
-        bottom: 395vh;
-        left: 80vw;
-        width: 20%;
-        img {
+    .footer {
+        &__content {
             width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 0px;
+            h4 {
+                font-size: 3vw;
+                color: #f37364;
+            }
+    
+            &__form {
+                &--txtInput{
+                    border: 2px none;
+                    border-radius: 4px;
+                    padding: 1px 1vw;
+                    height: 5vh;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; align-items: center;
+                    width: 20vw;
+                }
+        
+                &--btn {
+                    color: white;
+                    background-color: #4F7A41;
+                    border: none;
+                    padding: 5px;
+                    height: 5vh;
+                    width: 8vw;
+                    border-radius: 25px 0px 25px 0px;
+                    font-size: 1vw;
+                }
+            }
+            &__link{
+                font-size: 1.3vw;
+                padding: 1px 5vw;
+            }
+    
+            
+        }
+    
+        &__forme {
+            &_vert {
+                position: relative;
+                right: -90vw;
+                bottom: 80vh;
+            }
+            
+            &_jaune {
+                position: relative;
+                left: -2vw;
+                bottom: 170vh;
+            }
+            
+            &_brun {
+                position: relative;
+                bottom: 250vh;
+                left: -10vw;
+            }
+            
+            &__arbre {
+                &_tronc {
+                    position: relative;
+                    bottom: 305vh;
+                    left: 10vw;
+                }
+                
+                &_feuilles {
+                    position: relative;
+                    bottom: 355vh;
+                    left: 7vw;
+                }
+            }  
+        }
+        &__logo {
+            position: relative;
+            bottom: 395vh;
+            left: 80vw;
+            width: 20%;
+            img {
+                width: 100%;
+            }
         }
     }
-
-    .footer__content--link{
-        font-size: 1.3vw;
-        padding: 1px 5vw;
-    }
-
 }
