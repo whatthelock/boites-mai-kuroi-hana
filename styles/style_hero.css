@@ -1,3 +1,4 @@
+@use "partials/variables";
 body {
   margin: 0px;
 }
@@ -8,49 +9,68 @@ body {
   overflow: hidden;
   background-color: #F9FFF7;
 }
-.hero .hero__content {
+
+.hero__content {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
-.hero .hero__content .hero__content--logo {
+
+.hero__content__logo {
   width: 25vw;
   height: 40vh;
 }
-.hero .hero__content .hero__content--logo img {
+
+.hero__content__logo img {
   width: 100%;
   z-index: 5;
 }
-.hero .hero__content .hero__content--logo h2 {
+
+.hero__content__logo h2 {
   margin: 0px;
 }
-.hero .hero__content .hero__content--fleche {
+
+.hero__content__fleche {
   position: relative;
   top: 25vh;
   z-index: 5;
 }
-.hero .hero__forme--jaune {
+
+.hero__forme_jaune {
   position: relative;
-  left: 60vw;
-  bottom: 120vh;
+  left: 70vw;
+  bottom: 115vh;
 }
-.hero .hero__forme--brun {
+
+.hero__forme_brun {
   position: relative;
   left: 23vw;
   bottom: 140vh;
 }
-.hero .hero__forme--rose {
+
+.hero__forme_rose {
   position: relative;
   right: 7vw;
   bottom: 200vh;
 }
-.hero .hero__forme--vert {
+
+.hero__forme_vert {
   position: relative;
   left: -10vw;
   bottom: 335vh;
   z-index: 0;
-}/*# sourceMappingURL=style_hero.css.map */
+}
+/*# sourceMappingURL=style_hero.css.map */

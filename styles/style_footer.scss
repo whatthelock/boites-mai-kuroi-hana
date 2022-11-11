@@ -23,7 +23,7 @@ footer {
             }
     
             &__form {
-                &--txtInput{
+                &__txtInput{
                     border: 2px none;
                     border-radius: 4px;
                     padding: 1px 1vw;
@@ -32,7 +32,7 @@ footer {
                     width: 20vw;
                 }
         
-                &--btn {
+                &__btn {
                     color: white;
                     background-color: #4F7A41;
                     border: none;

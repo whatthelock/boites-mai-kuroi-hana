@@ -12,7 +12,7 @@ body {
     background-color: #F9FFF7; // use variables
     //border: 5px solid red;
 
-    .hero__content {
+    &__content {
         width: 100%;
         height: 100%;
         display: flex;
@@ -20,7 +20,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
-        .hero__content--logo {
+        &__logo {
             width: 25vw;
             height: 40vh;
             img {
@@ -31,7 +31,7 @@ body {
                 margin: 0px;
             }
         }
-        .hero__content--fleche {
+        &__fleche {
             position: relative;
             top: 25vh;
             z-index: 5;
@@ -39,32 +39,30 @@ body {
     }
     
 
-    .hero__forme--jaune {
+    &__forme_jaune {
         position: relative;
-        left: 60vw;
-        bottom: 120vh;
+        left: 70vw;
+        bottom: 115vh;
         //z-index: -1;
     }
     
-    .hero__forme--brun {
+    &__forme_brun {
         position: relative;
         left: 23vw;
         bottom: 140vh;
         //z-index: -1;
     }
     
-    .hero__forme--rose {
+    &__forme_rose {
         position: relative;
         right: 7vw;
         bottom: 200vh;
     }
     
-    .hero__forme--vert {
+    &__forme_vert {
         position: relative;
         left: -10vw;
         bottom: 335vh;
         z-index: 0;
     }
-    
-    
 }

@@ -31,7 +31,7 @@ footer .footer__content h4 {
   color: #f37364;
 }
 
-footer .footer__content__form--txtInput {
+footer .footer__content__form__txtInput {
   border: 2px none;
   border-radius: 4px;
   padding: 1px 1vw;
@@ -44,7 +44,7 @@ footer .footer__content__form--txtInput {
   width: 20vw;
 }
 
-footer .footer__content__form--btn {
+footer .footer__content__form__btn {
   color: white;
   background-color: #4F7A41;
   border: none;
