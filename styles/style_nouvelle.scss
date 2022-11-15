@@ -1,0 +1,30 @@
+@use "partials/variables";
+
+body{
+    font-size: 20px;
+}
+
+.nouvelle{
+    padding: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+
+    &__titre{
+        text-align: center;
+    }
+
+    &__auteur{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    &__image{
+       width: 100%;
+
+        &_container{
+            align-self: center;
+        }
+    }
+}
+
