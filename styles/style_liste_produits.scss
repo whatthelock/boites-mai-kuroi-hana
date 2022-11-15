@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-body{
-    background-color: #F9FFF7;
-}
-.boite__container{
-    display: flex;
-    flex-wrap: wrap; 
-}
-
-.boite__holder{
-    display: flex;
-    width: 25%; 
-}
 
 .boite{
     background-color: white;
@@ -26,47 +14,49 @@ body{
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
     position: relative;
-    transition: 0.5s;
     box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
     -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
     -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
     min-height: 27rem;
-}
 
-.boite:hover{
-    transition: 0.5s;
-    box-shadow: 6px 10px 26px 0px rgba(0,0,0,0.26);
-    -webkit-box-shadow: 6px 10px 26px 0px rgba(0,0,0,0.26);
-    -moz-box-shadow: 6px 10px 26px 0px rgba(0,0,0,0.26);
-}
+    &__holder{
+        display: flex;
+        width: 25%; 
+    }
 
-.boite__image{
-    width: 100%;
-    border-top-left-radius: 40px;
-}
+    &__container{
+        display: flex;
+        flex-wrap: wrap; 
+    }
 
-.boite__bouton_acheter{
-    background-color: #F37364;
-    padding: 1vh;
-    border-radius: 40px;
-    text-align: center;
-    color: white;
-    margin: 1em;
-}
+    &__image{
+        width: 100%;
+        border-top-left-radius: 40px;
+    }
 
-.boite__titre{
-    margin: 1vw;
-}
+    &__bouton_acheter{
+        background-color: #F37364;
+        padding: 1vh;
+        border-radius: 40px;
+        text-align: center;
+        color: white;
+        margin: 1em;
+    }
 
-.boite__texte{
-    margin: 1vw 1vw 0.1vw 0.5vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    padding: 0;
-}
+    &__titre{
+        margin: 1vw;
+    }
 
-.boite__prix{
-    display: flex;
-    justify-content: flex-end;
-    margin: 1em;
+    &__texte{
+        margin: 1vw 1vw 0.1vw 0.5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 0;
+    }
+
+    &__prix{
+        display: flex;
+        justify-content: flex-end;
+        margin: 1em;
+    }
 }
