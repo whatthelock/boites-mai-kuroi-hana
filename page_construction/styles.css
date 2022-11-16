@@ -1,17 +1,13 @@
 body {
   background-color: #403834;
   background-repeat: no-repeat;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .wrap {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -20,23 +16,16 @@ img {
 }
 
 .logo {
-  background: #e6d696;
-  background: linear-gradient(209deg, #e6d696 0%, #f7f2e0 49%);
+  background: rgb(230, 214, 150);
+  background: linear-gradient(209deg, rgb(230, 214, 150) 0%, rgb(247, 242, 224) 49%);
   margin-bottom: 10px;
   padding: 5px;
 }
 
 .boite {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
   margin: 5px;
   overflow: hidden;
@@ -44,12 +33,8 @@ img {
 
 .credit {
   background-color: #4f7a41;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-transform: uppercase;
   width: 50%;
   text-align: center;
@@ -57,7 +42,6 @@ img {
   font-size: 30px;
   margin: 5px;
 }
-
 .credit ul {
   color: #e7b6a1;
   list-style-type: none;
@@ -67,7 +51,7 @@ img {
   color: #4f7a41;
   background-color: #f37364;
   text-align: center;
-  font-family: 'MADE gentle';
+  font-family: "MADE gentle";
   font-size: 30px;
   text-transform: uppercase;
   text-transform: bold;
@@ -77,28 +61,22 @@ img {
 
 @media screen and (max-width: 650px) {
   .wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .boite, .credit {
     width: 300px;
   }
   .boite {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .boite div {
     width: 100%;
   }
   .credit {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 5px;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
