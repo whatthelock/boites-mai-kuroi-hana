@@ -1,3 +1,6 @@
+
+@use "partials/variables";
+
 .section__404{
     display: flex;
     justify-content: center;
@@ -24,7 +27,7 @@
     
     &__btn {
         color: white;
-        background-color: #4F7A41;
+        background-color: $orange;
         opacity: 86%;
         border: none;
         padding: 5px;
