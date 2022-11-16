@@ -22,8 +22,9 @@ body{
     &__image{
        width: 100%;
 
-        &_container{
+        &__container{
             align-self: center;
+            margin: 3vw;
         }
     }
 }

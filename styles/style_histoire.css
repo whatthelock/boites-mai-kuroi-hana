@@ -1,1 +1,24 @@
-/*# sourceMappingURL=style_histoire.css.map */
+body {
+  font-size: 20px;
+}
+
+.histoire {
+  padding: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.histoire__titre {
+  text-align: center;
+}
+.histoire__auteur {
+  text-align: center;
+  font-size: 15px;
+}
+.histoire__image {
+  width: 100%;
+}
+.histoire__image__container {
+  align-self: center;
+  margin: 3vw;
+}/*# sourceMappingURL=style_histoire.css.map */

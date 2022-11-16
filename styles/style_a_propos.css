@@ -1,1 +1,23 @@
-/*# sourceMappingURL=style_a_propos.css.map */
+body {
+  font-size: 20px;
+}
+
+.a_propos {
+  padding: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.a_propos__titre {
+  text-align: center;
+}
+.a_propos__auteur {
+  text-align: center;
+  font-size: 15px;
+}
+.a_propos__image {
+  width: 100%;
+}
+.a_propos__image_container {
+  align-self: center;
+}/*# sourceMappingURL=style_a_propos.css.map */

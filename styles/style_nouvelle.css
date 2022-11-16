@@ -18,6 +18,7 @@ body {
 .nouvelle__image {
   width: 100%;
 }
-.nouvelle__image_container {
+.nouvelle__image__container {
   align-self: center;
+  margin: 3vw;
 }/*# sourceMappingURL=style_nouvelle.css.map */

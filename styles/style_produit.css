@@ -14,7 +14,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.produit__image_container {
+.produit__image__container {
   display: inline-flex;
   justify-content: flex-end;
   width: 40vw;
