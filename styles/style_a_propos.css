@@ -1,23 +1,38 @@
+@use "partials/variables";
 body {
   font-size: 20px;
 }
 
 .a_propos {
   padding: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .a_propos__titre {
   text-align: center;
 }
+
 .a_propos__auteur {
   text-align: center;
   font-size: 15px;
 }
+
 .a_propos__image {
   width: 100%;
 }
+
 .a_propos__image_container {
-  align-self: center;
-}/*# sourceMappingURL=style_a_propos.css.map */
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=style_a_propos.css.map */
