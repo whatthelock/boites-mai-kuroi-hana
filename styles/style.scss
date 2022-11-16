@@ -1,24 +1,24 @@
 @use "partials/variables";
 
 @font-face {
-    src: url("sources/02_font/Mermaid1001.woff2") format("woff2");
+    src: url("../sources/02_font/Mermaid1001.woff2") format("woff2");
     font-family: "mermaid";
 }
 
 @font-face {
-    src: url("sources/02_font/MADE\ Gentle\ PERSONAL\ USE.woff2") format("woff2");
+    src: url("../sources/02_font/made_gentle.woff2") format("woff2");
     font-family: "gentle";
 }
 
 @font-face {
-    src: url("sources/02_font/Roboto-Regular.woff2") format("woff2");
+    src: url("../sources/02_font/Roboto-Regular.woff2") format("woff2");
     font-family: "roboto";
 }
 
 body {
     background-color: variables.$background;
     font-family: 'roboto';
-    font-size: 1vw;
+    font-size: 1.4vw;
     width: 100%;
     margin: 0px;
 }
@@ -30,12 +30,9 @@ body {
     position: sticky-top;
 }
 
-h1 {
-    font-family: "mermaid";
-}
-
-h2, h3, h3, h4, h5 {
+h1, h2, h3, h3, h4, h5 {
     font-family: "gentle";
+    letter-spacing: 3px;
 }
 
 .link {

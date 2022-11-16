@@ -1,12 +1,5 @@
-@use "partials/variables";
-body {
-  font-size: 20px;
-}
-
 .a_propos {
-  padding: 6vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding: 4vw 12vw;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
