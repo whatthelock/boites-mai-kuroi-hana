@@ -1,31 +1,53 @@
 @use "partials/variables";
 
-body{
+body {
     font-size: 20px;
 }
 
-.nouvelle{
+.nouvelle {
     padding: 6vw;
     display: flex;
     flex-direction: column;
     justify-content: center;    
 
-    &__titre{
+    &__titre {
         text-align: center;
+        font-size: 9vw;
+        margin-bottom: 0px;
     }
 
-    &__auteur{
+    &__auteur {
         text-align: center;
         font-size: 15px;
+        margin: 0px;
     }
 
-    &__image{
+    &__image {
        width: 100%;
 
-        &__container{
+        &__container {
             align-self: center;
             margin: 3vw;
         }
     }
 }
 
+@media screen  and ( min-width: 768px ) {
+    .nouvelle {
+        &__titre {
+            font-size: 7vw;
+        }
+
+        &__auteur {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and ( min-width: 1200px ) {
+    .nouvelle {
+        &__auteur {
+            font-size: 30px;
+        }
+    }
+}

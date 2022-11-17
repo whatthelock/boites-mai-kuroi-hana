@@ -19,11 +19,14 @@ body {
 
 .nouvelle__titre {
   text-align: center;
+  font-size: 9vw;
+  margin-bottom: 0px;
 }
 
 .nouvelle__auteur {
   text-align: center;
   font-size: 15px;
+  margin: 0px;
 }
 
 .nouvelle__image {
@@ -35,5 +38,20 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   margin: 3vw;
+}
+
+@media screen and (min-width: 768px) {
+  .nouvelle__titre {
+    font-size: 7vw;
+  }
+  .nouvelle__auteur {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nouvelle__auteur {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=style_nouvelle.css.map */
