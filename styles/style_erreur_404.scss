@@ -1,7 +1,6 @@
-
 @use "partials/variables";
 
-.section__404{
+.section__404 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,22 +8,22 @@
     height: 100vh;
     text-align: center;
 
-    &__title{
+    &__title {
         font-size: 22vh;
         margin: 0;
         color: #f37364;
     }
-    
-    &__subtitle{
+
+    &__subtitle {
         font-size: 2.3vh;
         margin: 0;
     }
 
-    &__txt{
+    &__txt {
         font-size: 1.3vh;
         text-decoration: underline;
     }
-    
+
     &__btn {
         color: white;
         background-color: $orange;
@@ -39,8 +38,13 @@
         font-weight: 500;
     }
 
-    &__blended {
-      background-blend-mode: multiply;
+    &__shapes{
+        position: absolute;
+        background-blend-mode: multiply;
     }
 }
 
+.section__404__shapes{
+    position: absolute;
+    background-color: #f37364;
+}
