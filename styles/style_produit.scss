@@ -1,38 +1,48 @@
 @use "partials/variables";
 
-body{
+body {
     font-size: 20px;
 }
 
-.produit{
+.produit {
     padding: 4vw;
 
-    &__image{
+    &__image {
         width: 100%;
 
-        &_resume{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;  
+        &__titre {
+            order: 0;
         }
 
-        &__container{
+        &__resume {
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;  
+            order: 2;
+        }
+
+        &__container {
             display: inline-flex;
             justify-content: flex-end;
             width: 40vw;
+            /* i dont understand why aspect-ratio doesn't work 
+            so I had to put a height*/
+            // aspect-ratio: 1/1;
+            height: 40vw;
+            order: 1;
         }
     }
 
-    &__survol{
+    &__survol {
         display: inline-flex;
         flex-direction: column;
         justify-content: flex-start;
         width: 40vw; 
     }
 
-    &__bouton_ajouter{
-        background-color: variables.$orange;
+    &__bouton_ajouter {
+        background-color: #f37364;
         border-radius: 40px;
         border: none;
         text-align: center;
@@ -42,8 +52,8 @@ body{
         font-size: 18px;
     }
 
-    &__nombre_quantite{
-        background-color: variables.$background;
+    &__nombre_quantite {
+        background-color: #F9FFF7;
         width: 3vw;
         height: 2vw;
         text-align: center;
@@ -53,7 +63,21 @@ body{
         border: 2px solid black;
     }
 
-    &__details{
+    &__details {
         margin-top: 10vh;
     }
+}
+
+@media screen and ( min-width: 768px ) {
+    .produit {
+        &__image {
+            &__resume {
+                flex-flow: row;
+            }
+        }
+    }
+}
+
+@media screen and ( min-width: 1200px ) {
+
 }
