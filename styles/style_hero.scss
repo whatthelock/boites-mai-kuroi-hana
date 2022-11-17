@@ -3,14 +3,22 @@
 
 body {
     margin: 0px;
+    overflow-X: hidden;
 }
 
 .hero {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    background-color: #F9FFF7; // use variables
     //border: 5px solid red;
+    position: relative;
+
+    &__container{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        //border: 5px solid red;
+        position: absolute;
+    }
 
     &__content {
         width: 100%;
@@ -84,13 +92,10 @@ body {
     &__forme_vert {
         width: 150%;
         position: relative;
-        left: -30vw;
-        bottom: 3200px;;
+        left:0;
+        top: 0;
         z-index: 0;
 
-        svg {
-            width: 100%;
-        }
     }
 }
 
@@ -143,28 +148,30 @@ body {
                 }
             }
         }
-        
+    
         &__forme_jaune {
-            width: 60%;
-            left: 55vw;
-            bottom: 120vh;
+            right: 0vw;
         }
-        
+    
         &__forme_brun {
             width: 70%;
             left: 0vw;
-            bottom: 155vh;
+            bottom: -200px;
+            position: absolute;
         }
-        
+    
         &__forme_rose {
-            right: 45vw;
-            bottom: 230vh;
+            left: -51vw;
+            bottom: -13vh;
+            position: absolute;
         }
-        
+    
         &__forme_vert {
             width: 80%;
-            left: -10vw;
-            bottom: 3100px;
+            left: -24vw;
+            top: -258px;
+            z-index: 100;
+            position: absolute;
         }
     }
 }
