@@ -3,17 +3,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 4vw;
+}
+.a_propos h3 {
+  text-align: center;
 }
 .a_propos__titre {
   text-align: center;
-}
-.a_propos__auteur {
-  text-align: center;
-  font-size: 15px;
+  margin: 0px;
+  letter-spacing: 1px;
 }
 .a_propos__image {
   width: 100%;
 }
 .a_propos__image_container {
   align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .a_propos {
+    margin-top: 0px;
+  }
+  .a_propos__titre {
+    font-size: 5vw;
+  }
+  .a_propos h3 {
+    font-size: 4vw;
+  }
 }/*# sourceMappingURL=style_a_propos.css.map */
