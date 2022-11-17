@@ -29,6 +29,7 @@
 @media screen and ( min-width: 768px ) {
     .a_propos {
         margin-top: 0px;
+        font-size: 2vw;
 
         &__titre {
             font-size: 5vw;
@@ -36,6 +37,14 @@
 
         h3 {
             font-size: 4vw;
+        }
+    }
+}
+
+@media screen and ( min-width: 1200px ) {
+    .a_propos {
+        h3 {
+            font-size: 3vw;
         }
     }
 }

@@ -1,24 +1,39 @@
+@use "partials/variables";
 body {
   font-size: 20px;
 }
 
 .histoire {
   padding: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .histoire__titre {
   text-align: center;
 }
+
 .histoire__auteur {
   text-align: center;
   font-size: 15px;
 }
+
 .histoire__image {
   width: 100%;
 }
+
 .histoire__image__container {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 3vw;
-}/*# sourceMappingURL=style_histoire.css.map */
+}
+/*# sourceMappingURL=style_histoire.css.map */

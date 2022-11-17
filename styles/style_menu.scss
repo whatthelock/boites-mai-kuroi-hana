@@ -1,37 +1,37 @@
 @use "partials/variables";
 
-.navbar{
-    background-color: variables.$vert;
+.navbar {
+    background-color: #C8C0A9;
 
-    &__lien_pages{
-        color: variables.$background;
+    &__lien_pages {
+        color: #F9FFF7;
         text-decoration: none;
         text-transform: none;
 
-        &:hover{
-            color: variables.$orange;
+        &:hover {
+            color: #f37364;
         }
     }
 
-    &__logo{
+    &__logo {
         display: flex;
         max-width: 10vw;
         align-items: center;
         margin-left: 2.2vw;
     }
 
-    &__pages{
+    &__pages {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
 
-        li{
+        li {
             margin: 2.2vw 5vw;
         }
     }
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
