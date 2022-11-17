@@ -13,7 +13,7 @@
 body {
   background-color: #F9FFF7;
   font-family: "roboto";
-  font-size: 1.4vw;
+  font-size: 5vw;
   width: 100%;
   margin: 0px;
 }
@@ -25,11 +25,33 @@ body {
   position: sticky-top;
 }
 
-h1, h2, h3, h3, h4, h5 {
+h1 {
   font-family: "gentle";
-  letter-spacing: 3px;
+  font-size: 10vw;
+}
+
+h2, h3, h4, h5 {
+  font-family: "gentle";
+  font-size: 7vw;
+  letter-spacing: 2px;
 }
 
 .link {
   color: #f37364;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.4vw;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: "gentle";
+    letter-spacing: 3px;
+    font-size: 5vw;
+  }
 }/*# sourceMappingURL=style.css.map */
