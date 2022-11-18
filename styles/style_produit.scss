@@ -6,40 +6,44 @@ body {
 
 .produit {
     padding: 4vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    &__titre {
+        margin-bottom: 0px;
+    }
 
     &__image {
         width: 100%;
+        display: flex;
+        flex-flow: column;
 
-        &__titre {
-            order: 0;
-        }
-
-        &__resume {
+        &__survol {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: flex-start;
             width: 100%;
-            display: flex;
-            flex-flow: column;
-            justify-content: space-between;  
             order: 2;
         }
 
         &__container {
-            display: inline-flex;
-            justify-content: flex-end;
-            width: 40vw;
-            /* i dont understand why aspect-ratio doesn't work 
-            so I had to put a height*/
-            // aspect-ratio: 1/1;
-            height: 40vw;
+            display: flex;
+            width: 100%;
             order: 1;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__ui {
+            display: flex;
+            flex-flow: column;
+            order: 3;
         }
     }
 
-    &__survol {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 40vw; 
-    }
+    
 
     &__bouton_ajouter {
         background-color: #f37364;
@@ -47,15 +51,15 @@ body {
         border: none;
         text-align: center;
         color: white;
-        width: 10vw;
-        height: 3vw;
+        width: 50%;
         font-size: 18px;
+        padding: 2px;
     }
 
     &__nombre_quantite {
         background-color: #F9FFF7;
-        width: 3vw;
-        height: 2vw;
+        width: 25%;
+        padding: 2px;
         text-align: center;
         margin-top: 15px;
         font-size: 18px;
@@ -64,20 +68,91 @@ body {
     }
 
     &__details {
-        margin-top: 10vh;
+        margin-top: 2vh;
+        h4 {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__description {
+        margin-top: 0px;
     }
 }
 
 @media screen and ( min-width: 768px ) {
     .produit {
+        justify-content: center;
         &__image {
+            justify-content: space-around;
+            flex-flow: row;
+            flex-wrap: wrap;
             &__resume {
                 flex-flow: row;
+            }
+            &__container {
+                display: inline-flex;
+                justify-content: flex-end;
+                width: 40vw;
+                height: 40vw;
+                order: 2;
+            }
+            &__survol {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 40vw;
+                order: 1;
+            }
+            &__ui {
+                width: 100%;
+                flex-flow: row;
+                justify-content: space-around;
+                margin-top: 5px;
+                h4, form {
+                    width: 40vw;
+                }
+                h4 {
+                    margin-top: 0px;
+                }
+            }
+        }
+        &__titre {
+            margin-top: 0px;
+        }
+        &__prix {
+            font-size: 5vw;
+        }
+        &__details {
+            h4 {
+                margin-top: 10px;
             }
         }
     }
 }
 
 @media screen and ( min-width: 1200px ) {
+    .produit {
+        &__image {
+            display: grid;
+            grid-template-areas: 
+            "survol survol content"
+            "ui ui content";
 
+            &__content {
+                grid-area: content;
+            }
+
+            &__survol {
+                grid-area: survol;
+            }
+
+            &__ui {
+                width: 50%;
+                flex-flow: column;
+                align-items: flex-start;
+                grid-area: ui;
+            }
+        }
+        
+    }
 }
