@@ -7,6 +7,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 5%;
 }
 
 .boite {
@@ -26,19 +27,23 @@
     -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
     min-height: 27rem;
 
-    &__holder {
-        display: flex;
-        width: 100%; 
-    }
-
     &__container {
         display: grid;
         grid-template-columns: 1; 
     }
 
+    &__holder {
+        display: flex;
+        width: 100%; 
+    }
+
     &__image {
         width: 100%;
         border-top-left-radius: 40px;
+    }
+
+    &__content {
+        padding: 2vw;
     }
 
     &__bouton_acheter {
@@ -69,7 +74,15 @@
 }
 
 @media screen and ( min-width: 768px ) {
+    .boite {
+        &__container {
+            grid-template-columns: repeat(auto-fill );
+        }
 
+        &__holder {
+            width: 40%;
+        }
+    }
 }
 
 @media screen and ( min-width: 1200px ) {
