@@ -1,40 +1,29 @@
 .section__404 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100vh;
   text-align: center;
 }
-
 .section__404__title {
   font-size: 22vh;
   margin: 0;
+  background: url(sources/01_medias/paths_kuroi-hana.png) 0 0/cover no-repeat;
   color: #f37364;
+  background-blend-mode: multiply;
 }
-
 .section__404__subtitle {
   font-size: 2.3vh;
   margin: 0;
 }
-
 .section__404__txt {
   font-size: 1.3vh;
   text-decoration: underline;
 }
-
 .section__404__btn {
   color: white;
-  background-color: #4F7A41;
+  background-color: #f37364;
   opacity: 86%;
   border: none;
   padding: 5px;
@@ -42,7 +31,79 @@
   width: 20vh;
   border-radius: 25px 0px 25px 0px;
   font-size: 1.3vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
 }
-/*# sourceMappingURL=style_erreur_404.css.map */
+.section__404__shapes {
+  position: absolute;
+  background-blend-mode: multiply;
+}
+
+.section__404__shapes {
+  position: absolute;
+  font-size: 20vw;
+  font-family: "mabella";
+  text-align: center;
+  line-height: 80%;
+  letter-spacing: 0.5vw;
+  background-image: url(assets/png/ernest-karchmit-UAbg0py6GYQ-unsplash.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  -webkit-animation: hero-title-animation 0.3s infinite;
+          animation: hero-title-animation 0.3s infinite;
+  background-size: 300vh;
+  z-index: -5;
+  top: 0%;
+}
+.section__404__shapes__red {
+  max-width: 50%;
+}
+.section__404__shapes__green {
+  max-width: 80%;
+  background-blend-mode: multiply;
+}
+.section__404__shapes__yellow {
+  max-width: 50%;
+}
+
+.titre__oeuvre {
+  font-size: 20vw;
+  font-family: "mabella";
+  text-align: center;
+  line-height: 80%;
+  letter-spacing: 0.5vw;
+  background-image: url(sources/01_medias/paths_kuroi-hana.png);
+  background-position: center;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  animation: hero__title__animation 5s alternate-reverse infinite;
+  background-size: 300vh;
+}
+
+@-webkit-keyframes hero__title__animation {
+  from {
+    transform: scaleY(0);
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  to {
+    transform: scaleY(1);
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+}
+
+@keyframes hero__title__animation {
+  from {
+    transform: scaleY(0);
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  to {
+    transform: scaleY(1);
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+}/*# sourceMappingURL=style_erreur_404.css.map */
