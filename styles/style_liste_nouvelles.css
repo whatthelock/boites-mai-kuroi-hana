@@ -1,4 +1,12 @@
-.boite {
+.boites {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boites__boite {
+  display: flex;
+  width: 33%;
+}
+.boites__boite__content {
   background-color: white;
   display: block;
   margin: 1.5vw;
@@ -15,22 +23,14 @@
   -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   min-height: 27rem;
 }
-.boite__holder {
-  display: flex;
-  width: 33%;
-}
-.boite__container {
-  display: flex;
-  flex-wrap: wrap;
-}
-.boite__image {
+.boites__boite__content__image {
   width: 100%;
   border-top-right-radius: 40px;
 }
-.boite__titre {
+.boites__boite__content__titre {
   margin: 2vw;
 }
-.boite__auteur {
+.boites__boite__content__auteur {
   padding: 0;
   margin: 1em;
 }/*# sourceMappingURL=style_liste_nouvelles.css.map */
