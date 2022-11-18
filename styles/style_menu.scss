@@ -1,15 +1,15 @@
 @use "partials/variables";
 
 .navbar {
-    background-color: #C8C0A9;
+    background-color: variables.$backgroundMenu;
 
     &__lien_pages {
-        color: #F9FFF7;
+        color: variables.$background;
         text-decoration: none;
         text-transform: none;
 
         &:hover {
-            color: #f37364;
+            color: variables.$orange;
         }
     }
 

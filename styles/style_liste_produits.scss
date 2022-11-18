@@ -1,7 +1,7 @@
+@use "partials/variables";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-@use "partials/variables";
 
 .section {
     display: flex;
@@ -12,7 +12,7 @@
 .boite {
     background-color: white;
     display: block;
-    margin: 1.5vw;
+    margin: 3vw;
     flex-direction: column;
     /* max-width: 20vw; */
     width: 100%;

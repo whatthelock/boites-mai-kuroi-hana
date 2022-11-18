@@ -46,18 +46,21 @@ body {
     
 
     &__bouton_ajouter {
-        background-color: #f37364;
+        background-color: variables.$orange;
         border-radius: 40px;
         border: none;
         text-align: center;
-        color: white;
+        color: variables.$background;
         width: 50%;
         font-size: 18px;
         padding: 2px;
     }
 
+
+
+
     &__nombre_quantite {
-        background-color: #F9FFF7;
+        background-color: variables.$background;
         width: 25%;
         padding: 2px;
         text-align: center;

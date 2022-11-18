@@ -1,12 +1,8 @@
-@use "partials/variables";
 .boite {
   background-color: white;
   display: block;
   margin: 1.5vw;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /* max-width: 20vw; */
   width: 28vw;
   text-decoration: none;
@@ -19,33 +15,22 @@
   -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   min-height: 27rem;
 }
-
 .boite__holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 33%;
 }
-
 .boite__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .boite__image {
   width: 100%;
   border-top-right-radius: 40px;
 }
-
 .boite__titre {
   margin: 2vw;
 }
-
 .boite__auteur {
   padding: 0;
   margin: 1em;
-}
-/*# sourceMappingURL=style_liste_nouvelles.css.map */
+}/*# sourceMappingURL=style_liste_nouvelles.css.map */
