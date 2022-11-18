@@ -1,41 +1,41 @@
-.boite{
-    background-color: white;
-    display: block;
-    margin: 1.5vw;
-    flex-direction: column;
-    /* max-width: 20vw; */
-    width: 28vw;
-    text-decoration: none;
-    color: black;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    position: relative;
-    box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
-    -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
-    -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
-    min-height: 27rem;
-
-    &__holder{
+.boites{
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__boite{
         display: flex;
-        width: 33%; 
-    }
+        width: 33%;
+        
+        &__content{
+            background-color: white;
+            display: block;
+            margin: 1.5vw;
+            flex-direction: column;
+            /* max-width: 20vw; */
+            width: 28vw;
+            text-decoration: none;
+            color: black;
+            border-bottom-left-radius: 40px;
+            border-top-right-radius: 40px;
+            position: relative;
+            box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+            -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+            -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+            min-height: 27rem; 
 
-    &__container{
-        display: flex;
-        flex-wrap: wrap; 
-    }
+            &__image{
+                width: 100%;
+                border-top-right-radius: 40px;
+            }
 
-    &__image{
-        width: 100%;
-        border-top-right-radius: 40px;
-    }
+            &__titre{
+                margin: 2vw;
+            }
 
-    &__titre{
-        margin: 2vw;
-    }
-
-    &__auteur{
-        padding: 0;
-        margin: 1em;
+            &__auteur{
+                padding: 0;
+                margin: 1em;
+            }
+        }
     }
 }
