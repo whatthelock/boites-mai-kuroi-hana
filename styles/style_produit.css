@@ -1,4 +1,3 @@
-@use "partials/variables";
 body {
   font-size: 20px;
 }
@@ -9,41 +8,12 @@ body {
   flex-flow: column;
   align-items: center;
 }
-<<<<<<< Updated upstream
-
-.produit__image {
-  width: 100%;
-}
-
-.produit__image__titre {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-}
-
-.produit__image__resume {
-=======
 .produit__titre {
   margin-bottom: 0px;
 }
 .produit__image {
->>>>>>> Stashed changes
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-<<<<<<< Updated upstream
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-=======
   flex-flow: column;
 }
 .produit__image__survol {
@@ -52,39 +22,8 @@ body {
   justify-content: flex-start;
   width: 100%;
   order: 2;
->>>>>>> Stashed changes
 }
-
 .produit__image__container {
-<<<<<<< Updated upstream
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 40vw;
-  /* i dont understand why aspect-ratio doesn't work 
-            so I had to put a height*/
-  height: 40vw;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.produit__survol {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 40vw;
-=======
   display: flex;
   width: 100%;
   order: 1;
@@ -96,9 +35,7 @@ body {
   display: flex;
   flex-flow: column;
   order: 3;
->>>>>>> Stashed changes
 }
-
 .produit__bouton_ajouter {
   background-color: #f37364;
   border-radius: 40px;
@@ -109,7 +46,6 @@ body {
   font-size: 18px;
   padding: 2px;
 }
-
 .produit__nombre_quantite {
   background-color: #F9FFF7;
   width: 25%;
@@ -120,7 +56,6 @@ body {
   border-radius: 8px;
   border: 2px solid black;
 }
-
 .produit__details {
   margin-top: 2vh;
 }
@@ -141,15 +76,8 @@ body {
     flex-wrap: wrap;
   }
   .produit__image__resume {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    flex-flow: row;
   }
-<<<<<<< Updated upstream
-}
-/*# sourceMappingURL=style_produit.css.map */
-=======
   .produit__image__container {
     display: inline-flex;
     justify-content: flex-end;
@@ -204,4 +132,3 @@ body {
     grid-area: ui;
   }
 }/*# sourceMappingURL=style_produit.css.map */
->>>>>>> Stashed changes
