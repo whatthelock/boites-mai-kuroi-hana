@@ -1,50 +1,89 @@
 @use "partials/variables";
 
-.section__404 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    text-align: center;
-
-    &__title {
-        font-size: 22vh;
-        margin: 0;
-        color: #f37364;
-    }
-
-    &__subtitle {
-        font-size: 2.3vh;
-        margin: 0;
-    }
-
-    &__txt {
-        font-size: 1.3vh;
-        text-decoration: underline;
-    }
-
-    &__btn {
-        color: white;
-        background-color: $orange;
-        opacity: 86%;
-        border: none;
-        padding: 5px;
-        height: 5vh;
-        width: 20vh;
-        border-radius: 25px 0px 25px 0px;
-        font-size: 1.3vh;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 500;
-    }
-
-    &__shapes{
-        position: absolute;
-        background-blend-mode: multiply;
-    }
+body{
+  background-image: url("../sources/01_medias/pied_boites_mai.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.section__404__shapes{
+
+.section__404 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 2.3vh;
+    margin: 0;
+  }
+
+  &__txt {
+    font-size: 1.3vh;
+    text-decoration: underline;
+  }
+
+  &__btn {
+    color: white;
+    background-color: #4f7a41;
+    opacity: 86%;
+    border: none;
+    padding: 5px;
+    height: 5vh;
+    width: 20vh;
+    border-radius: 25px 0px 25px 0px;
+    font-size: 1.3vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+  }
+
+  &__shapes {
     position: absolute;
-    background-color: #f37364;
+    background-blend-mode: multiply;
+  }
+}
+
+.titre__oeuvre {
+  font-size: 20vw;
+  font-family: "mabella";
+  text-align: center;
+  // text-transform: capitalize;
+  line-height: 80%;
+  letter-spacing: 0.5vw;
+  background-image: url("../sources/01_medias/paths_404.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #E7B6A1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  animation-duration: 650s;
+  animation-name: hero__title__animation;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  background-size: 300px;
+
+}
+
+@keyframes hero__title__animation {
+  from {
+    background-position: 0px 0px;
+    //  animation-delay: 0.5s;
+  }
+
+  to {
+    //background-position: left;
+    // background-size: 100px;
+    background-position: 0px 50000px;
+
+    //  animation-delay: 3s;
+  }
 }
