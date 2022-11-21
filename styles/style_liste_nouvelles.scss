@@ -1,20 +1,20 @@
 @use "partials/variables";
 
-.boites{
-    display: flex;
-    flex-wrap: wrap;
+.nouvelles {
+    display: grid;
+    grid-template-columns: 1;
     
-    &__boite{
+    &__nouvelle {
         display: flex;
-        width: 33%;
+        width: 100%;
         
-        &__content{
-            background-color: white;
+        &__content {
+            background-color: variables.$background;
             display: block;
-            margin: 1.5vw;
+            margin: 3vw;
             flex-direction: column;
             /* max-width: 20vw; */
-            width: 28vw;
+            width: 100%;
             text-decoration: none;
             color: black;
             border-bottom-left-radius: 40px;
@@ -25,18 +25,30 @@
             -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
             min-height: 27rem; 
 
-            &__image{
+            &__image {
                 width: 100%;
                 border-top-right-radius: 40px;
             }
 
-            &__titre{
+            &__titre {
                 margin: 2vw;
             }
 
-            &__auteur{
+            &__auteur {
                 padding: 0;
                 margin: 1em;
+            }
+        }
+    }
+}
+
+@media screen and ( min-width: 768px ) {
+    .nouvelles {
+        &__nouvelle {
+            width: 33%;
+            &__content {
+                width: 28vw;
+                margin: 1.5vw;
             }
         }
     }

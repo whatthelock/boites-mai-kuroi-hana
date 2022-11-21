@@ -9,7 +9,7 @@
 
 .boites {
   display: grid;
-  grid-column: 2;
+  grid-template-columns: auto-fit;
 }
 .boites__boite {
   display: flex;
@@ -63,13 +63,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .boite {
-    background-color: #F37364;
+  .boites__boite {
+    width: 40%;
   }
-  .boite__container {
-    grid-template-columns: 2;
-  }
-  .boite__holder {
+  .boites__holder {
     width: 40%;
   }
 }

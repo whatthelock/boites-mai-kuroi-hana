@@ -1,18 +1,18 @@
-.boites {
-  display: flex;
-  flex-wrap: wrap;
+.nouvelles {
+  display: grid;
+  grid-template-columns: 1;
 }
-.boites__boite {
+.nouvelles__nouvelle {
   display: flex;
-  width: 33%;
+  width: 100%;
 }
-.boites__boite__content {
-  background-color: white;
+.nouvelles__nouvelle__content {
+  background-color: #F9FFF7;
   display: block;
-  margin: 1.5vw;
+  margin: 3vw;
   flex-direction: column;
   /* max-width: 20vw; */
-  width: 28vw;
+  width: 100%;
   text-decoration: none;
   color: black;
   border-bottom-left-radius: 40px;
@@ -23,14 +23,24 @@
   -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   min-height: 27rem;
 }
-.boites__boite__content__image {
+.nouvelles__nouvelle__content__image {
   width: 100%;
   border-top-right-radius: 40px;
 }
-.boites__boite__content__titre {
+.nouvelles__nouvelle__content__titre {
   margin: 2vw;
 }
-.boites__boite__content__auteur {
+.nouvelles__nouvelle__content__auteur {
   padding: 0;
   margin: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .nouvelles__nouvelle {
+    width: 33%;
+  }
+  .nouvelles__nouvelle__content {
+    width: 28vw;
+    margin: 1.5vw;
+  }
 }/*# sourceMappingURL=style_liste_nouvelles.css.map */

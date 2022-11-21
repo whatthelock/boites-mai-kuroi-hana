@@ -13,7 +13,7 @@
 .boites {
     // list-style-type: none;
     display: grid;
-    grid-column: 2;
+    grid-template-columns: auto-fit;
 
     &__boite {
         display: flex;
@@ -76,15 +76,17 @@
 }
 
 @media screen and ( min-width: 768px ) {
-    .boite {
+    .boites {
+        &__boite {
+            width: 40%;
+        }
         &__container {
-            grid-template-columns: 2;
+            
         }
 
         &__holder {
             width: 40%;
         }
-        background-color: #F37364;
     }
 }
 
