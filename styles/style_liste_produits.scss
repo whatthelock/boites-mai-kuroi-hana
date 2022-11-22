@@ -13,28 +13,27 @@
 .boites {
     // list-style-type: none;
     display: grid;
-    grid-template-columns: auto-fit;
+    grid-template-columns:  repeat(auto-fit, minmax(18vw, 1fr)); 
+    gap: 2.5vw;
+    margin: 3vw 6vw;
 
     &__boite {
-        display: flex;
         width: 100%; 
-
-        &__content {
-            background-color: white;
+        background-color: white;
             display: block;
-            margin: 3vw;
-            flex-direction: column;
-            /* max-width: 20vw; */
             width: 100%;
-            text-decoration: none;
-            color: black;
             border-bottom-right-radius: 40px;
             border-top-left-radius: 40px;
-            position: relative;
             box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
                 -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
                 -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
-            min-height: 27rem;
+
+
+        &__content {
+            /* max-width: 20vw; */
+            // min-height: 27rem;
+            text-decoration: none;
+            color: black;
 
             &__image {
                 width: 100%;
@@ -44,6 +43,7 @@
             &__info {
                 &__titre {
                     margin: 1vw; 
+                    font-size: 165%;
                 }
 
                 &__txt {
@@ -54,19 +54,19 @@
                 }
 
                 &__prix {
-                    display: flex;
-                    justify-content: flex-end;
+                    text-align: right;
                     margin: 1em;
                 }
             }
 
             &__btn {
                 background-color: #F37364;
-                padding: 1vh;
                 border-radius: 40px;
                 text-align: center;
                 color: white;
-                margin: 1em;
+                padding: 1vh 1vw;
+                margin: 0 1vw 2vh 1vw;
+                position: relative;
             }
         }
     }
@@ -78,7 +78,6 @@
 @media screen and ( min-width: 768px ) {
     .boites {
         &__boite {
-            width: 40%;
         }
         &__container {
             
