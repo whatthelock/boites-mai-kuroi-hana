@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.boites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
+  gap: 2.5vw;
+  margin: 3vw 6vw;
+}
+.boites__boite {
+  width: 100%;
+  background-color: white;
+  display: block;
+  width: 100%;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
+}
+.boites__boite__content {
+  /* max-width: 20vw; */
+  text-decoration: none;
+  color: black;
+}
+.boites__boite__content__image {
+  width: 100%;
+  border-top-left-radius: 40px;
+}
+.boites__boite__content__info__titre {
+  margin: 1vw;
+  font-size: 165%;
+}
+.boites__boite__content__info__txt {
+  margin: 1vw 1vw 0.1vw 0.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 0;
+}
+.boites__boite__content__info__prix {
+  text-align: right;
+  margin: 1em;
+}
+.boites__boite__content__btn {
+  background-color: #F37364;
+  border-radius: 40px;
+  text-align: center;
+  color: white;
+  padding: 1vh 1vw;
+  margin: 0 1vw 2vh 1vw;
+  position: relative;
+}
+.boites__content {
+  padding: 2vw;
+}
+
+@media screen and (min-width: 768px) {
+  .boites__holder {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .boite {
+    width: 20vw;
+  }
+}/*# sourceMappingURL=style_liste_produits.css.map */

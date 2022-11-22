@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 	Template Name: WTFFFFF
+ * 	Template Name: À propos
  * 	Identique à page, mais avec une barre latérale
  */
 
