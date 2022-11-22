@@ -49,11 +49,11 @@ body {
   flex-direction: column;
 }
 .section__404__animation__arrosoir {
-  width: 25vw;
+  width: 18vw;
   transform: rotate(70deg);
 }
 .section__404__animation__goutte {
-  width: 2vw;
+  width: 1.7vw;
   display: flex;
 }
 
