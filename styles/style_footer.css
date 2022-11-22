@@ -1,11 +1,11 @@
-footer {
-  width: 100%;
-  height: 90vh;
-  overflow: hidden;
-  position: static;
-  bottom: 0px;
+.copyright {
+  font-size: 1.4vw;
 }
+
 footer .footer__content {
+  background-image: url(../sources/01_medias/footer_bckimg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   display: flex;
@@ -15,7 +15,10 @@ footer .footer__content {
   text-align: center;
   margin-top: 0px;
 }
-footer .footer__content h4 {
+footer .footer__content__form {
+  width: 100%;
+}
+footer .footer__content__form__title {
   font-size: 3vw;
   color: #f37364;
 }
@@ -26,7 +29,8 @@ footer .footer__content__form__txtInput {
   height: 5vh;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   align-items: center;
-  width: 20vw;
+  width: 30%;
+  max-width: 90%;
 }
 footer .footer__content__form__btn {
   color: white;
@@ -34,38 +38,18 @@ footer .footer__content__form__btn {
   border: none;
   padding: 5px;
   height: 5vh;
-  width: 8vw;
+  width: 10%;
   border-radius: 25px 0px 25px 0px;
   font-size: 1vw;
 }
 footer .footer__content__link {
+  text-decoration: none;
+  color: black;
+}
+footer .footer__content__box {
   font-size: 1.3vw;
   padding: 1px 5vw;
-}
-footer .footer__forme_vert {
-  position: relative;
-  right: -90vw;
-  bottom: 80vh;
-}
-footer .footer__forme_jaune {
-  position: relative;
-  left: -2vw;
-  bottom: 170vh;
-}
-footer .footer__forme_brun {
-  position: relative;
-  bottom: 250vh;
-  left: -10vw;
-}
-footer .footer__forme__arbre_tronc {
-  position: relative;
-  bottom: 305vh;
-  left: 10vw;
-}
-footer .footer__forme__arbre_feuilles {
-  position: relative;
-  bottom: 355vh;
-  left: 7vw;
+  margin: 3vw 0vw 3vw 0vw;
 }
 footer .footer__logo {
   position: relative;
@@ -75,4 +59,24 @@ footer .footer__logo {
 }
 footer .footer__logo img {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__content__form__title {
+    font-size: 4vw;
+    color: #f37364;
+  }
+  .footer__content__form__btn {
+    color: white;
+    background-color: #4F7A41;
+    border: none;
+    padding: 5px;
+    height: 5vh;
+    width: 80%;
+    border-radius: 25px 0px 25px 0px;
+    font-size: 1vw;
+  }
+  .footer__content__link {
+    font-size: 3vw;
+  }
 }/*# sourceMappingURL=style_footer.css.map */
