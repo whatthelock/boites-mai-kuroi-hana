@@ -12,7 +12,7 @@ body {
     //border: 5px solid red;
     position: relative;
 
-    &__container{
+    &__container {
         width: 100vw;
         height: 100vh;
         //border: 5px solid red;
@@ -47,7 +47,7 @@ body {
 
             h2 {
                 margin: 0px;
-                font-size: 4vh;
+                font-size: 2vh;
             }
         }
     }
@@ -101,85 +101,18 @@ body {
     }
 }
 
-// @media screen and (min-width: 768px) {
-//     .hero {
+@media screen and (min-width: 768px) {
+    .hero {
 
-//         &__content {
+        &__content {
 
-//             &__logo {
+            &__logo {
 
-//                 h2 {
-//                     font-size: 5vh;
-//                 }
-//             }
-//         }
+                h2 {
+                    font-size: 4vh;
+                }
+            }
+        }
 
-//         &__forme_jaune {
-//             left: -70vw;
-//             bottom: 115vh;
-//         }
-        
-//         &__forme_brun {
-//             left: -10vw;
-//             bottom: 160vh;
-//         }
-        
-//         &__forme_rose {
-//             right: 40vw;
-//             bottom: 240vh;
-//         }
-        
-//         &__forme_vert {
-//             left: -50vw;
-//             bottom: 3200px;;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1200px) {
-
-//     .hero {
-
-//         &__content {
-
-//             &__logo {
-//                 width: 40vw;
-
-//                 h2 {
-//                     font-size: 4vh;
-//                 }
-//             }
-//         }
-    
-//         .hero__forme_jaune {
-//             right: 0vw;
-//             height: 100vh;
-//             width: 45vw;
-//             z-index: 100;
-//         }
-    
-//         &__forme_brun {
-//             background-image: url("../sources/01_medias/path3.png");
-//             width: 70%;
-//             left: 20vw;
-//             bottom: -200px;
-//             position: absolute;
-//         }
-    
-//         &__forme_rose {
-//             background-image: url("../sources/01_medias/path4.png");
-//             left: -51vw;
-//             bottom: -13vh;
-//             position: absolute;
-//         }
-    
-//         &__forme_vert {
-//             background-image: url("../sources/01_medias/path1.png");
-//             width: 80%;
-//             left: -24vw;
-//             top: -258px;
-//             z-index: 100;
-//             position: absolute;
-//         }
-//     }
-// }
+    }
+}

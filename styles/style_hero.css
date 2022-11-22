@@ -39,7 +39,7 @@ body {
 }
 .hero__content__logo h2 {
   margin: 0px;
-  font-size: 4vh;
+  font-size: 2vh;
 }
 .hero__forme_jaune {
   background-image: url("../sources/01_medias/hero_jaune.png");
@@ -82,4 +82,10 @@ body {
   top: 0;
   z-index: 0;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content__logo h2 {
+    font-size: 4vh;
+  }
 }/*# sourceMappingURL=style_hero.css.map */

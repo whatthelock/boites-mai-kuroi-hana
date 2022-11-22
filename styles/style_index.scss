@@ -1,25 +1,28 @@
 @use "partials/variables";
 
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
-.underline{
+.underline {
     text-decoration: underline;
 }
 
-.content{
+.content {
     padding: 0 5% 4% 5%;
-    h2{
+
+    h2 {
         text-align: center;
         font-size: 3.6vw;
         margin-bottom: 0;
     }
 
-    &__graphs{
+    &__graphs {
         margin-top: 6vw;
         display: flex;
         justify-content: space-around;
 
-        &__graph{
+        &__graph {
             padding: 2.7vw;
             width: 100%;
             aspect-ratio: 6 / 7;
@@ -28,19 +31,19 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 15%;
-            
-            img{
+
+            img {
                 width: 100%;
             }
         }
     }
 
-    &__wrapper{
+    &__wrapper {
         font-size: 1.5vw;
         width: 20vw;
     }
-    
-    &__produit{
+
+    &__produit {
         margin-top: 6vw;
     }
 }
@@ -50,33 +53,33 @@
     margin-top: 6vw;
     margin-bottom: 100px;
 
-    &-slide{
-        a{
+    &-slide {
+        a {
             display: flex;
             justify-content: center;
             align-items: flex-start;
             height: 28vw;
             text-decoration: none;
             color: inherit;
-            
-            img{
+
+            img {
                 width: 80%;
             }
-            
-            .class{
+
+            .class {
                 text-align: center;
                 width: 100%;
                 bottom: 6%;
                 z-index: 2;
                 position: absolute;
 
-                h2{
+                h2 {
                     color: #F37364;
                     font-size: 3vw;
                 }
             }
 
-            .title{
+            .title {
                 font-size: 1.5vw;
                 text-align: center;
                 width: 100%;
@@ -87,4 +90,3 @@
         }
     }
 }
-
