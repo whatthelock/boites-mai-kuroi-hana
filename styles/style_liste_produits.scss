@@ -13,20 +13,19 @@
 .boites {
     // list-style-type: none;
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(18vw, 1fr)); 
+    grid-template-columns:  repeat(auto-fit, minmax(18vw, 100%)); 
     gap: 2.5vw;
     margin: 3vw 6vw;
 
     &__boite {
         width: 100%; 
-        background-color: white;
-            display: block;
-            width: 100%;
-            border-bottom-right-radius: 40px;
-            border-top-left-radius: 40px;
-            box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
-                -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
-                -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+        background-color: variables.$blanc;
+        display: block;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
+        box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+            -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+            -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
 
 
         &__content {
@@ -77,20 +76,14 @@
 
 @media screen and ( min-width: 768px ) {
     .boites {
-        &__boite {
-        }
-        &__container {
-            
-        }
-
-        &__holder {
-            width: 40%;
-        }
+        // width: 40%; 
+        grid-template-columns:  repeat(auto-fit, minmax(18vw, 48.5%));
     }
 }
 
 @media screen and ( min-width: 1200px ) {
-    .boite {
-        width: 20vw;
+    .boites {
+        // width: 20vw;
+        grid-template-columns:  repeat(auto-fit, minmax(18vw, 1fr));
     }
 }
