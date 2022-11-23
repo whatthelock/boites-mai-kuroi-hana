@@ -17,16 +17,81 @@
         letter-spacing: 1px;
     }
 
-    &__image {
-       width: 100%;
+    &__boite_image {
+        align-self: center;
 
-        &_container {
-            align-self: center;
+        &__img {
+            margin-top: 2vw;
+            width: 100%;
         }
     }
 }
 
-@media screen and ( min-width: 768px ) {
+
+.equipe{
+
+    &__titre{
+        text-align: center;
+    }
+
+    &__boites {
+        // list-style-type: none;
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(18vw, 1fr)); 
+        gap: 2.5vw;
+        margin: 3vw 6vw;
+    
+        &__boite {
+            width: 100%; 
+            background-color: white;
+                display: block;
+                width: 100%;
+                border-bottom-right-radius: 40px;
+                border-top-left-radius: 40px;
+                box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+                    -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+                    -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+    
+            &__image {
+                width: 100%;
+                border-top-left-radius: 40px;
+            }
+
+        
+            &__titre {
+                margin: 1vw;
+                font-size: 2vw; 
+            }
+
+            &__phrase {
+                margin: 1vw;
+                padding: 0;
+            }      
+        }
+    }
+}
+
+.histoire{
+    padding: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+
+    &__titre{
+        text-align: center;
+    }
+
+    &__boite_image{
+        align-self: center;
+        margin: 3vw;
+
+        &__img{
+            width: 100%;
+        }
+    }
+}
+
+/* @media screen and ( min-width: 768px ) {
     .a_propos {
         margin-top: 0px;
         font-size: 2vw;
@@ -39,7 +104,7 @@
             font-size: 4vw;
         }
     }
-}
+}*/
 
 @media screen and ( min-width: 1200px ) {
     .a_propos {
