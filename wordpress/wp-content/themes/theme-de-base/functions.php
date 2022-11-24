@@ -42,14 +42,28 @@ add_action('widgets_init', 'add_sidebars');
 
 /* -------------------------------- 
 Function ajoutant les styles et scripts */
+add_action('wp_enqueue_scripts', 'add_style_and_js');
 function add_style_and_js()
 {
     /* Ajoute le fichier style.css du theme WordPress actif 
 	  1. 'default' = ID de référence à donner au à la feuille de style
 		2. get_template_directory_uri() . '/style.css' = Chemin où ce trouve le fichier CSS en question
 	*/
-    wp_enqueue_style('default', get_template_directory_uri() . '/style.css');
-    wp_enqueue_style('default2', get_template_directory_uri() . '/style_liste_produits.css');
+    wp_enqueue_style('default', 'http://localhost/boites-mai-kuroi-hana/wordpress/styles/style.css');
+    //wp_enqueue_style('liste_produit', get_template_directory_uri() . '/style_liste_produits.css');
+    wp_enqueue_style('footer', 'http://localhost/boites-mai-kuroi-hana/wordpress/styles/style_footer.css');
+    wp_enqueue_style('menu', 'http://localhost/boites-mai-kuroi-hana/wordpress/styles/style_menu.css');
+
+    if (is_page_template('index.php')) {
+        wp_enqueue_style('index', get_template_directory_uri() . '/style_index.css');
+        wp_enqueue_style('hero', get_template_directory_uri() . '/style_hero.css');
+        wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
+    }
+
+    if (is_page_template('about.php')) {
+        wp_enqueue_style('index', 'http://localhost/boites-mai-kuroi-hana/wordpress/styles/style_a_propos.css');
+    }
+
 
     /* Pour ajoutez une feuille de style supplémentaire, copier la ligne précédente et ajuster le chemin du fichier de façon relative vers votre nouveau fichier CSS */
 
@@ -61,6 +75,11 @@ function add_style_and_js()
 		 5. true = Est-ce que le script doit-être ajouté à la fin du body. Si mis à false le script est ajouter dans le head à la place
 	*/
     wp_enqueue_script('default', get_template_directory_uri() . '/main.js', array(), false, true);
+
+    if (is_page_template('index.php')) {
+
+        wp_enqueue_script('indexjs', get_template_directory_uri() . '/script_index.js', array(), false, true);
+    }
 
     /* Pour ajoutez un script, copier la ligne précédente et ajuster le chemin de façon relative vers votre nouveau fichier JS */
 }
