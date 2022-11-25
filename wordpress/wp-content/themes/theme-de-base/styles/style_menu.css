@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #c8c0a9;
+}
+.navbar__lien_pages {
+  color: #F9FFF7;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 2vw;
+}
+.navbar__lien_pages:hover {
+  color: #f37364;
+}
+.navbar__logo {
+  display: flex;
+  max-width: 10vw;
+  align-items: center;
+  margin-left: 2.2vw;
+}
+#menu-menu-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: none;
+}
+#menu-menu-1 li {
+  margin: 2.2vw 5vw;
+  list-style-type: none;
+}
+
+#menu-menu-1 li a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+#menu-menu-1 ul {
+  list-style-type: none;
+}
+
+.container__ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=style_menu.css.map */

@@ -3,7 +3,7 @@
 /**
 
 /**
- * 	Template Name: INdex
+ * 	Template Name: Index
  * 	Identique à page, mais avec une barre latérale
  */
 
@@ -155,6 +155,7 @@ get_header(); // Affiche header.php
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="http://localhost/boites-mai-kuroi-hana/wordpress/wp-content/themes/theme-de-base/styles/script_index.js"></script>
 </div>
 <?php get_footer(); // Affiche footer.php 
 ?>

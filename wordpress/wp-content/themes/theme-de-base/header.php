@@ -7,12 +7,6 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/style_menu.css">
-    <link rel="stylesheet" href="styles/style_liste_produits.css">
-    <link rel="stylesheet" href="styles/style_footer.css">
-
-
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
     <title>
@@ -88,11 +82,24 @@
         }
         ?>
 
-        <nav>
-            <?php
-            // Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
-            wp_nav_menu(array('theme_location' => 'main-menu'));
-            ?>
+        <nav class='navbar'>
+            <div class='navbar__container'>
+                <div class='container__collapse'>
+                    <ul class='container__ul'>
+                        <li>
+                            <a href="http://localhost/boites-mai-kuroi-hana/wordpress/">
+                                <img src="http://localhost/boites-mai-kuroi-hana/wordpress/wp-content/uploads/2022/11/logo_mai.png" class="navbar__logo" alt="menu">
+                            </a>
+                        </li>
+
+                        <?php
+                        // Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
+                        wp_nav_menu(array('theme_location' => 'main-menu'));
+                        ?>
+                    </ul>
+                </div>
+            </div>
+
         </nav>
 
     </header>
