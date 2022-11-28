@@ -49,7 +49,7 @@ function add_style_and_js()
 	  1. 'default' = ID de référence à donner au à la feuille de style
 		2. get_template_directory_uri() . '/style.css' = Chemin où ce trouve le fichier CSS en question
 	*/
-    wp_enqueue_style('AAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH', get_template_directory_uri() . '/styles/style.css' . $debug);
+    wp_enqueue_style('styles', get_template_directory_uri() . '/styles/style.css' . $debug);
     //
     wp_enqueue_style('footer', get_template_directory_uri() . '/styles/style_footer.css' . $debug);
     wp_enqueue_style('menu', get_template_directory_uri() . '/styles/style_menu.css' . $debug);
@@ -89,13 +89,13 @@ function add_style_and_js()
 
     // if (is_page_template('index.php')) {
     //     wp_enqueue_script('swiper_js', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js');
-    //     wp_enqueue_script('AHHH', get_template_directory_uri() . '/styles/script_index.js');
+    //     wp_enqueue_script('AHHH', get_template_directory_uri() . '/scripts/script_index.js');
     // }
 
-    if (is_page_template('404.php')) {
-        wp_enqueue_script('swiper_js', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js');
-        wp_enqueue_script('AHHH', get_template_directory_uri() . '/styles/script_index.js');
-    }
+    // if (is_page_template('404.php')) {
+    //     wp_enqueue_script('swiper_js', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js');
+    //     wp_enqueue_script('AHHH', get_template_directory_uri() . '/scripts/script_index.js');
+    // }
 
 
     /* Pour ajoutez un script, copier la ligne précédente et ajuster le chemin de façon relative vers votre nouveau fichier JS */

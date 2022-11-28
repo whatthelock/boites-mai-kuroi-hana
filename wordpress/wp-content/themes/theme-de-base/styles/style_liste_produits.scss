@@ -26,13 +26,14 @@
         box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
             -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
             -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
-
+        position: relative;
 
         &__content {
             /* max-width: 20vw; */
             // min-height: 27rem;
             text-decoration: none;
             color: black;
+            height: 100%;
 
             &__image {
                 width: 100%;
@@ -50,6 +51,12 @@
                     margin-left: 1vw;
                     margin-right: 1vw;
                     padding: 0;
+                    max-height: 200px;
+                    overflow: hidden;
+
+                    p{
+                        margin: 0;
+                    }
                 }
 
                 &__prix {
@@ -65,7 +72,7 @@
                 color: white;
                 padding: 1vh 1vw;
                 margin: 0 1vw 2vh 1vw;
-                position: relative;
+                bottom: 0;
             }
         }
     }

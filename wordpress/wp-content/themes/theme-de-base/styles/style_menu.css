@@ -16,23 +16,16 @@
   align-items: center;
   margin-left: 2.2vw;
 }
-#menu-menu-1 {
+.navbar__pages {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: none;
 }
-#menu-menu-1 li {
+.navbar__pages li {
   margin: 2.2vw 5vw;
   list-style-type: none;
 }
-
-#menu-menu-1 li a{
-    text-decoration: none;
-    color: inherit;
-  }
-
-#menu-menu-1 ul {
+.navbar__pages ul {
   list-style-type: none;
 }
 
@@ -43,4 +36,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.container__ul #menu-menu-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: none;
+}
+.container__ul #menu-menu-1 li {
+  margin: 2.2vw 5vw;
+  list-style-type: none;
+}
+.container__ul #menu-menu-1 li a {
+  text-decoration: none;
+  color: inherit;
+}
+.container__ul #menu-menu-1 ul {
+  list-style-type: none;
 }/*# sourceMappingURL=style_menu.css.map */

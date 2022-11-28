@@ -31,6 +31,8 @@
   margin: 3vw 6vw;
 }
 .equipe__boites__boite {
+  transition-property: transform;
+  transition-duration: 0.2s;
   width: 100%;
   background-color: white;
   display: block;
@@ -52,6 +54,9 @@
 .equipe__boites__boite__phrase {
   margin: 1vw;
   padding: 0;
+}
+.equipe__boites__boite:hover {
+  transform: scale(1.05);
 }
 
 .histoire {

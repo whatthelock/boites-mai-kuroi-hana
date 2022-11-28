@@ -42,6 +42,8 @@
         margin: 3vw 6vw;
     
         &__boite {
+            transition-property: transform;
+            transition-duration: 0.2s;
             width: 100%; 
             background-color: white;
                 display: block;
@@ -66,7 +68,11 @@
             &__phrase {
                 margin: 1vw;
                 padding: 0;
-            }      
+            }  
+            
+            &:hover{
+                transform: scale(1.05);
+            }
         }
     }
 }

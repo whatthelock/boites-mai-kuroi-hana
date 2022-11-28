@@ -28,9 +28,9 @@ $products = new WP_Query('post_type=produit');
 
                             <div class="boites__boite__content__info">
                                 <h3 class="boites__boite__content__info__titre"><?php the_title(); ?></h3>
-                                <p class="boites__boite__content__info__txt">
+                                <div class="boites__boite__content__info__txt">
                                     <?php the_content(); ?>
-                                </p>
+                                </div>
                                 <b>
                                     <p class="boites__boite__content__info__prix"><?php the_field('prix'); ?></p>
                                 </b>
