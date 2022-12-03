@@ -1,4 +1,3 @@
-@use "partials/variables";
 body {
   font-size: 15px;
 }
@@ -7,10 +6,7 @@ body {
   background-color: white;
   display: block;
   margin: 1.5vw;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 28vw;
   text-decoration: none;
   color: black;
@@ -22,37 +18,25 @@ body {
   -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   min-height: 27rem;
 }
-
 .boite__holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 25%;
 }
-
 .boite__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .boite__container__titre {
   text-align: center;
   font-size: 30px;
 }
-
 .boite__image {
   width: 100%;
   border-top-right-radius: 40px;
 }
-
 .boite__titre {
   margin: 1em;
 }
-
 .boite__phrase {
   margin: 2vw;
-}
-/*# sourceMappingURL=style_equipe.css.map */
+}/*# sourceMappingURL=style_equipe.css.map */
