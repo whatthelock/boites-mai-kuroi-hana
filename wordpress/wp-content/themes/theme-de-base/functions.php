@@ -68,6 +68,10 @@ function add_style_and_js()
         wp_enqueue_style('liste_produit', get_template_directory_uri() . '/styles/style_liste_produits.css' . $debug);
     }
 
+    if (is_page_template('news-hub.php')) {
+        wp_enqueue_style('liste_produit', get_template_directory_uri() . '/styles/style_liste_produits.css' . $debug);
+    }
+
     if (is_page_template('404.php')) {
         wp_enqueue_style('404', get_template_directory_uri() . '/styles/style_erreur_404.css' . $debug);
     }
