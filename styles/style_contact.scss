@@ -2,26 +2,35 @@
 
 * {
     box-sizing: border-box;
-  }
-
-html{
-    height: 100vh;
 }
 
-.content{
+html {
+    height: 100vh;
+
+}
+
+.content {
     margin: 10px;
 
-    &-form{
+    & h1 {
+        margin-left: 20px;
+        font-size: 4vw;
+    }
+    &-form {
         background-color: #ecf6e880;
         padding: 20px;
         border-radius: 20px;
     }
 
-    &__grid{
+    &__grid {
         display: grid;
-        grid-template-columns: repeat( 2, minmax(250px, 1fr) );
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
         gap: 2%;
         margin: 15px;
+
+        background-color: #ecf6e880;
+        padding: 20px;
+        border-radius: 20px;
 
         &__btn {
             background-color: #F37364;
@@ -33,14 +42,31 @@ html{
         }
     }
 
-    &__map{
+    &__media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__telephone{
+            text-decoration: none;
+            color: black;
+            transition: 0.4s ease-in-out;
+        }
+
+        &__telephone:hover{
+            border-bottom: 2px solid black;
+        }
+    }
+
+    &__map {
         margin: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    & p{
+    & p {
         margin: 0 0 10px 0;
     }
 
@@ -48,23 +74,16 @@ html{
         position: relative;
         width: 100%;
         height: 100%;
-      }
+    }
 }
 
 
-.content-form{
-    // flex-direction: cn;
-    // align-items: flex-end;
-}
+// .content-form{
+//     // flex-direction: cn;
+//     // align-items: flex-end;
+// }
 
-.telephone{
-    display: grid;
-    // grid-template-columns: repeat(auto-fit, 150px);
 
-    // display: flex;
-    // // justify-content: flex-end;
-    // align-items: flex-end;
-}
 
 input[type=text] {
     border: none;
@@ -78,27 +97,40 @@ input[type=text] {
     text-indent: 10px;
 }
 
-#fname{
+#fname {
     max-width: 40%;
 }
 
-#lname{
+#lname {
     width: 56%;
 }
 
-  @media screen and ( max-width: 1024px ) {
+.socials {
+    height: 3vw;
+    margin: 0.3vw;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+
+}
+
+.socials:hover {
+    opacity: 0.6;
+
+}
+
+@media screen and (max-width: 1024px) {
     input[type=text] {
         height: 3.5vw;
     }
 
-    #fname{
+    #fname {
         max-width: 100%;
     }
-    
-    #lname{
+
+    #lname {
         max-width: 100%;
     }
-    
+
     .boite {
         &__container {
             grid-template-columns: 2;
@@ -107,12 +139,32 @@ input[type=text] {
         &__holder {
             width: 40%;
         }
+
         background-color: #F37364;
     }
 }
 
-@media screen and ( min-width: 1200px ) {
+@media screen and (min-width: 1200px) {
     .boite {
         width: 20vw;
     }
 }
+
+// @media  and (orientation: portrait) {
+//     .content {
+//         margin: 10px;
+    
+//         &__grid {
+//             display: grid;
+//             grid-template-columns: repeat(2, minmax(1000px, 1fr));
+//             gap: 2%;
+//             margin: 15px;
+    
+//             background-color: #ecf6e880;
+//             padding: 20px;
+//             border-radius: 20px;
+    
+
+//         }
+//     }
+// }

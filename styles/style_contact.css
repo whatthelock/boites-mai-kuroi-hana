@@ -9,6 +9,10 @@ html {
 .content {
   margin: 10px;
 }
+.content h1 {
+  margin-left: 20px;
+  font-size: 4vw;
+}
 .content-form {
   background-color: rgba(236, 246, 232, 0.5019607843);
   padding: 20px;
@@ -19,6 +23,9 @@ html {
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 2%;
   margin: 15px;
+  background-color: rgba(236, 246, 232, 0.5019607843);
+  padding: 20px;
+  border-radius: 20px;
 }
 .content__grid__btn {
   background-color: #F37364;
@@ -27,6 +34,20 @@ html {
   border-radius: 40px;
   border: none;
   color: white;
+}
+.content__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content__media__telephone {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+.content__media__telephone:hover {
+  border-bottom: 2px solid black;
 }
 .content__map {
   margin: 30px;
@@ -41,10 +62,6 @@ html {
   position: relative;
   width: 100%;
   height: 100%;
-}
-
-.telephone {
-  display: grid;
 }
 
 input[type=text] {
@@ -67,6 +84,17 @@ input[type=text] {
 
 #lname {
   width: 56%;
+}
+
+.socials {
+  height: 3vw;
+  margin: 0.3vw;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.socials:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 1024px) {
