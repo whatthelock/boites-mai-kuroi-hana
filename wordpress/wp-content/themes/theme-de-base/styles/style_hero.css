@@ -10,7 +10,7 @@ body {
 }
 .hero__container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: absolute;
 }
 .hero__content {
@@ -41,10 +41,14 @@ body {
   margin: 0px;
   font-size: 2vh;
 }
+.hero__content__title {
+  color: #f37364;
+  text-shadow: rgba(0, 0, 0, 0.171) 1px 0 10px;
+}
 .hero__forme_jaune {
   background-image: url("http://localhost/boites-mai-kuroi-hana/wordpress/wp-content/uploads/2022/11/hero_jaune.png");
   right: 0vw;
-  height: 100vh;
+  height: 100%;
   width: 38vw;
   position: absolute;
   top: 0;
@@ -56,7 +60,7 @@ body {
   position: absolute;
   left: 11vw;
   width: 30vw;
-  height: 23vh;
+  height: 23%;
   bottom: 0;
   background-repeat: no-repeat;
   background-size: 100% 101%;
@@ -69,14 +73,14 @@ body {
   bottom: 2vh;
   z-index: 0;
   width: 23vw;
-  height: 47vh;
+  height: 47%;
   background-repeat: no-repeat;
 }
 .hero__forme_vert {
   background-image: url("http://localhost/boites-mai-kuroi-hana/wordpress/wp-content/uploads/2022/11/vert_hero.png");
   background-size: 100% 101%;
   width: 60vw;
-  height: 46vh;
+  height: 46%;
   position: absolute;
   left: 0;
   top: 0;
