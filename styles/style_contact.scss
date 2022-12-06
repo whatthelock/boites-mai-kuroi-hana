@@ -6,7 +6,6 @@
 
 html {
     height: 100vh;
-
 }
 
 .content {
@@ -16,7 +15,7 @@ html {
         margin-left: 20px;
         font-size: 4vw;
     }
-    &-form {
+    &__form {
         background-color: #ecf6e880;
         padding: 20px;
         border-radius: 20px;
@@ -48,14 +47,15 @@ html {
         justify-content: center;
         flex-direction: column;
 
-        &__telephone{
+        &__underline{
             text-decoration: none;
             color: black;
+            border-bottom: none;
             transition: 0.4s ease-in-out;
         }
 
-        &__telephone:hover{
-            border-bottom: 2px solid black;
+        &__underline:hover{
+            border-bottom: 1px solid black;
         }
     }
 
@@ -75,15 +75,13 @@ html {
         width: 100%;
         height: 100%;
     }
+
+    &__mailTxt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
-
-
-// .content-form{
-//     // flex-direction: cn;
-//     // align-items: flex-end;
-// }
-
-
 
 input[type=text] {
     border: none;
@@ -97,56 +95,80 @@ input[type=text] {
     text-indent: 10px;
 }
 
-#fname {
-    max-width: 40%;
-}
-
-#lname {
-    width: 56%;
-}
-
 .socials {
     height: 3vw;
     margin: 0.3vw;
     opacity: 1;
     transition: 0.3s ease-in-out;
-
 }
 
 .socials:hover {
     opacity: 0.6;
-
 }
 
-@media screen and (max-width: 1024px) {
-    input[type=text] {
-        height: 3.5vw;
-    }
-
-    #fname {
-        max-width: 100%;
-    }
-
-    #lname {
-        max-width: 100%;
-    }
-
-    .boite {
-        &__container {
-            grid-template-columns: 2;
+@media screen and (min-width: 375px) {
+    .content {
+        margin: 0;
+        padding: 0;
+        p {
+            font-size: 2.4vw;
         }
 
-        &__holder {
-            width: 40%;
+        input[type=text] {
+            height: 5vw;
         }
 
-        background-color: #F37364;
+        label {
+            font-size: 2.4vw;
+        }
+
+        &__grid {
+            display: block;
+        }
+
+        &__mailTxt {
+            text-align: center;
+            margin-bottom: 10px;
+        }
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .boite {
-        width: 20vw;
+@media screen and (max-width: 768px) {
+    // input[type=text] {
+    //     height: 3.5vw;
+    // }
+
+    // .boite {
+    //     &__holder {
+    //         width: 40%;
+    //     }
+
+    //     background-color: #F37364;
+    //}
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        p {
+            font-size: 2.4vw;
+        }
+
+        input[type=text] {
+            height: 5vw;
+        }
+
+        label {
+            font-size: 2.4vw;
+        }
+
+        &__grid {
+            display: block;
+        }
+
+        &__mailTxt {
+            text-align: center;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -164,7 +186,6 @@ input[type=text] {
 //             padding: 20px;
 //             border-radius: 20px;
     
-
 //         }
 //     }
 // }

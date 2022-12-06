@@ -13,7 +13,7 @@ html {
   margin-left: 20px;
   font-size: 4vw;
 }
-.content-form {
+.content__form {
   background-color: rgba(236, 246, 232, 0.5019607843);
   padding: 20px;
   border-radius: 20px;
@@ -41,13 +41,14 @@ html {
   justify-content: center;
   flex-direction: column;
 }
-.content__media__telephone {
+.content__media__underline {
   text-decoration: none;
   color: black;
+  border-bottom: none;
   transition: 0.4s ease-in-out;
 }
-.content__media__telephone:hover {
-  border-bottom: 2px solid black;
+.content__media__underline:hover {
+  border-bottom: 1px solid black;
 }
 .content__map {
   margin: 30px;
@@ -62,6 +63,11 @@ html {
   position: relative;
   width: 100%;
   height: 100%;
+}
+.content__mailTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input[type=text] {
@@ -78,14 +84,6 @@ input[type=text] {
   text-indent: 10px;
 }
 
-#fname {
-  max-width: 40%;
-}
-
-#lname {
-  width: 56%;
-}
-
 .socials {
   height: 3vw;
   margin: 0.3vw;
@@ -97,28 +95,43 @@ input[type=text] {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 1024px) {
-  input[type=text] {
-    height: 3.5vw;
+@media screen and (min-width: 375px) {
+  .content {
+    margin: 0;
+    padding: 0;
   }
-  #fname {
-    max-width: 100%;
+  .content p {
+    font-size: 2.4vw;
   }
-  #lname {
-    max-width: 100%;
+  .content input[type=text] {
+    height: 5vw;
   }
-  .boite {
-    background-color: #F37364;
+  .content label {
+    font-size: 2.4vw;
   }
-  .boite__container {
-    grid-template-columns: 2;
+  .content__grid {
+    display: block;
   }
-  .boite__holder {
-    width: 40%;
+  .content__mailTxt {
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .boite {
-    width: 20vw;
+@media screen and (max-width: 1200px) {
+  .content p {
+    font-size: 2.4vw;
+  }
+  .content input[type=text] {
+    height: 5vw;
+  }
+  .content label {
+    font-size: 2.4vw;
+  }
+  .content__grid {
+    display: block;
+  }
+  .content__mailTxt {
+    text-align: center;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style_contact.css.map */
