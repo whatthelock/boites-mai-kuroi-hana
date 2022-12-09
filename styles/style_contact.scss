@@ -1,6 +1,6 @@
 @use "partials/variables";
 
-* {
+* { 
     box-sizing: border-box;
 }
 
@@ -11,10 +11,11 @@ html {
 .content {
     margin: 10px;
 
-    & h1 {
+    h1 {
         margin-left: 20px;
         font-size: 4vw;
     }
+
     &__form {
         background-color: #ecf6e880;
         padding: 20px;
@@ -47,14 +48,14 @@ html {
         justify-content: center;
         flex-direction: column;
 
-        &__underline{
+        &__underline {
             text-decoration: none;
             color: black;
             border-bottom: none;
             transition: 0.4s ease-in-out;
         }
 
-        &__underline:hover{
+        &__underline:hover {
             border-bottom: 1px solid black;
         }
     }
@@ -68,6 +69,7 @@ html {
 
     & p {
         margin: 0 0 10px 0;
+        
     }
 
     & .responsive-iframe {
@@ -76,7 +78,7 @@ html {
         height: 100%;
     }
 
-    &__mailTxt{
+    &__mailTxt {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -100,18 +102,21 @@ input[type=text] {
     margin: 0.3vw;
     opacity: 1;
     transition: 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
-.socials:hover {
-    opacity: 0.6;
-}
-
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .content {
         margin: 0;
         padding: 0;
+
+
+
         p {
-            font-size: 2.4vw;
+            font-size: 4.4vw;
         }
 
         input[type=text] {
@@ -119,7 +124,25 @@ input[type=text] {
         }
 
         label {
-            font-size: 2.4vw;
+            font-size: 4.4vw;
+        }
+
+        &__mailTxt {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        h1 {
+            font-size: 7vw;
+        }
+
+        p {
+            font-size: 3.4vw;
+            text-align: center;
         }
 
         &__grid {
@@ -128,42 +151,15 @@ input[type=text] {
 
         &__mailTxt {
             text-align: center;
-            margin-bottom: 10px;
         }
     }
-}
-
-@media screen and (max-width: 768px) {
-    // input[type=text] {
-    //     height: 3.5vw;
-    // }
-
-    // .boite {
-    //     &__holder {
-    //         width: 40%;
-    //     }
-
-    //     background-color: #F37364;
-    //}
+    input[type=text] {
+        height: 5.5vw;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .content {
-        p {
-            font-size: 2.4vw;
-        }
-
-        input[type=text] {
-            height: 5vw;
-        }
-
-        label {
-            font-size: 2.4vw;
-        }
-
-        &__grid {
-            display: block;
-        }
 
         &__mailTxt {
             text-align: center;

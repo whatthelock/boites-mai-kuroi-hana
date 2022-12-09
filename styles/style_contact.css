@@ -135,42 +135,46 @@ input[type=text] {
   opacity: 0.6;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .content {
     margin: 0;
     padding: 0;
   }
   .content p {
-    font-size: 2.4vw;
+    font-size: 4.4vw;
   }
   .content input[type=text] {
     height: 5vw;
   }
   .content label {
-    font-size: 2.4vw;
+    font-size: 4.4vw;
+  }
+  .content__mailTxt {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 7vw;
+  }
+  .content p {
+    font-size: 3.4vw;
+    text-align: center;
   }
   .content__grid {
     display: block;
   }
   .content__mailTxt {
     text-align: center;
-    margin-bottom: 10px;
+  }
+  input[type=text] {
+    height: 5.5vw;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .content p {
-    font-size: 2.4vw;
-  }
-  .content input[type=text] {
-    height: 5vw;
-  }
-  .content label {
-    font-size: 2.4vw;
-  }
-  .content__grid {
-    display: block;
-  }
   .content__mailTxt {
     text-align: center;
     margin-bottom: 10px;
