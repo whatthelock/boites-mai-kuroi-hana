@@ -1,28 +1,42 @@
+@use "partials/variables";
 body {
   font-size: 20px;
 }
 
 .nouvelle {
   padding: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .nouvelle__titre {
   text-align: center;
   font-size: 9vw;
   margin-bottom: 0px;
 }
+
 .nouvelle__auteur {
   text-align: center;
   font-size: 15px;
   margin: 0px;
 }
+
 .nouvelle__image {
   width: 100%;
 }
+
 .nouvelle__image__container {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 3vw;
 }
 
@@ -34,8 +48,10 @@ body {
     font-size: 20px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .nouvelle__auteur {
     font-size: 30px;
   }
-}/*# sourceMappingURL=style_nouvelle.css.map */
+}
+/*# sourceMappingURL=style_nouvelle.css.map */

@@ -1,3 +1,4 @@
+@use "partials/variables";
 .copyright {
   font-size: 1.4vw;
 }
@@ -8,30 +9,45 @@ footer .footer__content {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
   margin-top: 0px;
 }
+
 footer .footer__content__form {
   width: 100%;
 }
+
 footer .footer__content__form__title {
   font-size: 3vw;
   color: #f37364;
 }
+
 footer .footer__content__form__txtInput {
   border: 2px none;
   border-radius: 4px;
   padding: 1px 1vw;
   height: 5vh;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30%;
   max-width: 90%;
 }
+
 footer .footer__content__form__btn {
   color: white;
   background-color: #4F7A41;
@@ -42,21 +58,25 @@ footer .footer__content__form__btn {
   border-radius: 25px 0px 25px 0px;
   font-size: 1vw;
 }
+
 footer .footer__content__link {
   text-decoration: none;
   color: black;
 }
+
 footer .footer__content__box {
   font-size: 1.3vw;
   padding: 1px 5vw;
   margin: 3vw 0vw 3vw 0vw;
 }
+
 footer .footer__logo {
   position: relative;
   bottom: 395vh;
   left: 80vw;
   width: 20%;
 }
+
 footer .footer__logo img {
   width: 100%;
 }
@@ -79,4 +99,5 @@ footer .footer__logo img {
   .footer__content__link {
     font-size: 3vw;
   }
-}/*# sourceMappingURL=style_footer.css.map */
+}
+/*# sourceMappingURL=style_footer.css.map */

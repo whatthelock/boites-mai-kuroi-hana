@@ -1,3 +1,4 @@
+@use "partials/variables";
 body {
   margin: 0px;
   overflow-X: hidden;
@@ -8,39 +9,55 @@ body {
   height: 100vh;
   position: relative;
 }
+
 .hero__container {
   width: 100vw;
   height: 100vh;
   position: absolute;
 }
+
 .hero__content {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
+
 .hero__content__fleche {
   position: relative;
   top: 20vh;
   z-index: 5;
 }
+
 .hero__content__logo {
   display: block;
   z-index: 2;
   width: 40vw;
   height: 40vh;
 }
+
 .hero__content__logo img {
   width: 100%;
   z-index: 5;
 }
+
 .hero__content__logo h2 {
   margin: 0px;
   font-size: 2vh;
 }
+
 .hero__forme_jaune {
   background-image: url("../sources/01_medias/hero_jaune.png");
   right: 0vw;
@@ -51,6 +68,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 101%;
 }
+
 .hero__forme_brun {
   background-image: url("../sources/01_medias/brun_hero.png");
   position: absolute;
@@ -61,6 +79,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 101%;
 }
+
 .hero__forme_rose {
   background-image: url("../sources/01_medias/rose_hero.png");
   background-size: 100% 101%;
@@ -72,6 +91,7 @@ body {
   height: 47vh;
   background-repeat: no-repeat;
 }
+
 .hero__forme_vert {
   background-image: url("../sources/01_medias/vert_hero.png");
   background-size: 100% 101%;
@@ -88,4 +108,5 @@ body {
   .hero__content__logo h2 {
     font-size: 4vh;
   }
-}/*# sourceMappingURL=style_hero.css.map */
+}
+/*# sourceMappingURL=style_hero.css.map */
