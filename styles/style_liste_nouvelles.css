@@ -1,6 +1,13 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+
 .nouvelles {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: repeat(auto-fit, minmax(18vw, 100%));
+  gap: 15px;
+  margin: 2vw;
 }
 .nouvelles__nouvelle {
   display: flex;
@@ -9,19 +16,18 @@
 .nouvelles__nouvelle__content {
   background-color: #F9FFF7;
   display: block;
-  margin: 3vw;
-  flex-direction: column;
   /* max-width: 20vw; */
   width: 100%;
   text-decoration: none;
   color: black;
   border-bottom-left-radius: 40px;
   border-top-right-radius: 40px;
-  position: relative;
   box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   min-height: 27rem;
+  overflow: hidden;
+  padding-bottom: 15px;
 }
 .nouvelles__nouvelle__content__image {
   width: 100%;
@@ -29,18 +35,47 @@
 }
 .nouvelles__nouvelle__content__titre {
   margin: 2vw;
+  width: 100%;
+}
+.nouvelles__nouvelle__content__flare {
+  background-color: #f37364;
+  width: 25%;
+  padding: 7px;
+  border-radius: 20px;
+  margin: 2vw;
 }
 .nouvelles__nouvelle__content__auteur {
   padding: 0;
-  margin: 1em;
+  margin: 2vw;
+  width: 25%;
 }
 
 @media screen and (min-width: 768px) {
-  .nouvelles__nouvelle {
-    width: 33%;
+  .nouvelles {
+    grid-template-columns: repeat(auto-fit, minmax(18vw, 48.5%));
   }
-  .nouvelles__nouvelle__content {
-    width: 28vw;
-    margin: 1.5vw;
+  .nouvelles__nouvelle {
+    width: 100%;
+  }
+  .nouvelles__nouvelle__content__flare {
+    width: 30%;
+    font-size: 1.4rem;
+    margin-top: 0px;
+  }
+  .nouvelles__nouvelle__content__titre {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nouvelles {
+    grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
+  }
+  .nouvelles__nouvelle__content__flare {
+    font-size: 1.1rem;
+    margin-top: 0px;
+  }
+  .nouvelles__nouvelle__content__titre {
+    font-size: 2.2rem;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=style_liste_nouvelles.css.map */
