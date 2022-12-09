@@ -1,21 +1,35 @@
+@use "partials/variables";
 .a_propos {
   padding: 4vw 12vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 4vw;
 }
+
 .a_propos h3 {
   text-align: center;
 }
+
 .a_propos__titre {
   text-align: center;
   margin: 0px;
   letter-spacing: 1px;
 }
+
 .a_propos__boite_image {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
 .a_propos__boite_image__img {
   margin-top: 2vw;
   width: 100%;
@@ -24,12 +38,16 @@
 .equipe__titre {
   text-align: center;
 }
+
 .equipe__boites {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
+  -ms-grid-columns: (minmax(18vw, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
   gap: 2.5vw;
   margin: 3vw 6vw;
 }
+
 .equipe__boites__boite {
   width: 100%;
   background-color: white;
@@ -41,14 +59,17 @@
   -webkit-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
 }
+
 .equipe__boites__boite__image {
   width: 100%;
   border-top-left-radius: 40px;
 }
+
 .equipe__boites__boite__titre {
   margin: 1vw;
   font-size: 2vw;
 }
+
 .equipe__boites__boite__phrase {
   margin: 1vw;
   padding: 0;
@@ -56,17 +77,29 @@
 
 .histoire {
   padding: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .histoire__titre {
   text-align: center;
 }
+
 .histoire__boite_image {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 3vw;
 }
+
 .histoire__boite_image__img {
   width: 100%;
 }
@@ -89,4 +122,5 @@
   .a_propos h3 {
     font-size: 3vw;
   }
-}/*# sourceMappingURL=style_a_propos.css.map */
+}
+/*# sourceMappingURL=style_a_propos.css.map */
