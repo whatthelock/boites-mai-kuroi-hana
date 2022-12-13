@@ -28,6 +28,7 @@
             -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
             -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
         transition: transform 0.1s linear;
+        overflow: hidden;
 
         &__content {
             /* max-width: 20vw; */
@@ -37,7 +38,6 @@
 
             &__image {
                 width: 100%;
-                border-top-left-radius: 40px;
             }
 
             &__info {

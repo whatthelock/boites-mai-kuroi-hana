@@ -23,6 +23,7 @@
   -webkit-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   transition: transform 0.1s linear;
+  overflow: hidden;
 }
 .boites__boite__content {
   /* max-width: 20vw; */
@@ -31,7 +32,6 @@
 }
 .boites__boite__content__image {
   width: 100%;
-  border-top-left-radius: 40px;
 }
 .boites__boite__content__info__titre {
   margin: 1vw;
