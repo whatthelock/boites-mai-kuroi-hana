@@ -1,17 +1,20 @@
-section {
+.section {
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .nouvelles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18vw, 100%));
-  gap: 15px;
-  margin: 2vw;
+  gap: 2.5vw;
+  margin: 3vw 6vw;
 }
 .nouvelles__nouvelle {
   display: flex;
   width: 100%;
+  transition: transform 0.1s linear;
 }
 .nouvelles__nouvelle__content {
   background-color: #F9FFF7;
@@ -49,6 +52,9 @@ section {
   margin: 2vw;
   width: 25%;
 }
+.nouvelles__nouvelle:hover {
+  transform: scale(105%);
+}
 
 @media screen and (min-width: 768px) {
   .nouvelles {
@@ -75,7 +81,7 @@ section {
     margin-top: 0px;
   }
   .nouvelles__nouvelle__content__titre {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     margin-top: 0px;
   }
 }/*# sourceMappingURL=style_liste_nouvelles.css.map */

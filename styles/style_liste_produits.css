@@ -22,6 +22,7 @@
   box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
+  transition: transform 0.1s linear;
 }
 .boites__boite__content {
   /* max-width: 20vw; */
@@ -55,8 +56,8 @@
   margin: 0 1vw 2vh 1vw;
   position: relative;
 }
-.boites__content {
-  padding: 2vw;
+.boites__boite:hover {
+  transform: scale(105%);
 }
 
 @media screen and (min-width: 768px) {

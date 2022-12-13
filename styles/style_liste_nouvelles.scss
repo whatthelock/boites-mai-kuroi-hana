@@ -1,19 +1,23 @@
 @use "partials/variables";
 
-section {
+.section {
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 5%;
 }
 
 .nouvelles {
     display: grid;
     grid-template-columns:  repeat(auto-fit, minmax(18vw, 100%)); 
-    gap: 15px;
-    margin: 2vw;
+    gap: 2.5vw;
+    margin: 3vw 6vw;
 
     &__nouvelle {
         display: flex;
         width: 100%;
+        transition: transform 0.1s linear;
+
         
         &__content {
             background-color: variables.$background;
@@ -55,9 +59,10 @@ section {
                 width: 25%;
             }
         }
-        &__nouvelle:hover {
-            trans
-        }
+        
+    }
+    &__nouvelle:hover {
+        transform: scale(105%);
     }
 }
 
@@ -90,7 +95,7 @@ section {
                     margin-top: 0px;
                 }
                 &__titre {
-                    font-size: 2.2rem;
+                    font-size: 1.7rem;
                     margin-top: 0px;
                 }
             }
