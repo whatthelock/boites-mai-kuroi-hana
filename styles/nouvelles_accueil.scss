@@ -1,0 +1,90 @@
+@use "partials/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.boites {
+    // list-style-type: none;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(18vw, 100%)); 
+    gap: 2.5vw;
+    margin: 3vw 6vw;
+    
+
+    &__boite {
+        width: 100%; 
+        background-color: variables.$blanc;
+        display: block;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
+        box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+            -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+            -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
+        transition: transform 0.1s linear;
+        overflow: hidden;
+
+        &__content {
+            /* max-width: 20vw; */
+            // min-height: 27rem;
+            text-decoration: none;
+            color: black;
+
+            &__image {
+                width: 100%;
+            }
+
+            &__info {
+                &__titre {
+                    margin: 1vw; 
+                    font-size: 165%;
+                }
+
+                &__txt {
+                    margin: 1vw 1vw 0.1vw 0.5vw;
+                    margin-left: 1vw;
+                    margin-right: 1vw;
+                    padding: 0;
+                }
+
+                &__prix {
+                    text-align: right;
+                    margin: 1em;
+                }
+            }
+
+            &__btn {
+                background-color: #F37364;
+                border-radius: 40px;
+                text-align: center;
+                color: white;
+                padding: 1vh 1vw;
+                margin: 0 1vw 2vh 1vw;
+                position: relative;
+            }
+        }
+    }
+    &__boite:hover {
+        transform: scale(105%);
+    } 
+}
+
+@media screen and ( min-width: 768px ) {
+    .boites {
+        // width: 40%; 
+        grid-template-columns:  repeat(auto-fit, minmax(18vw, 48.5%));
+    }
+}
+
+@media screen and ( min-width: 1200px ) {
+    .boites {
+        // width: 20vw;
+        grid-template-columns:  repeat(auto-fit, minmax(18vw, 1fr));
+    }
+}
