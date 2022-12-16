@@ -7,8 +7,12 @@
 
 get_header(); // Affiche header.php
 
-$products = new WP_Query('post_type=nouvelle');
 
+$products = new WP_Query(array(
+    'post_type' => 'nouvelle',
+    'posts_per_page' => -1,
+    'order' => 'ASC',
+));
 //var_dump(print_r($products));
 ?>
 
@@ -23,7 +27,7 @@ $products = new WP_Query('post_type=nouvelle');
                     <!--<pre><?php //print_r($product); 
                                 ?></pre>-->
                     <div class="boites__boite">
-                        <a class="boites__boite__content" href="#">
+                        <a class="boites__boite__content" href="<?php the_permalink() ?>">
                             <img class="boites__boite__content__image" src="<?php the_field('image_principale'); ?>" alt="Boite Hélène">
 
                             <div class="boites__boite__content__info">
@@ -38,11 +42,9 @@ $products = new WP_Query('post_type=nouvelle');
                 endwhile;
             endif;
             wp_reset_query();
-
             //if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
             // Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
             //while (have_posts()) : the_post();
-
             ?>
         </div>
     </section>

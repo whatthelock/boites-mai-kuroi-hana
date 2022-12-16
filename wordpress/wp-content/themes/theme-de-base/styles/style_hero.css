@@ -44,6 +44,7 @@ body {
 .hero__content__title {
   color: #f37364;
   text-shadow: rgba(0, 0, 0, 0.171) 1px 0 10px;
+  z-index: 5;
 }
 .hero__forme_jaune {
   background-image: url("http://localhost/boites-mai-kuroi-hana/wordpress/wp-content/uploads/2022/11/hero_jaune.png");

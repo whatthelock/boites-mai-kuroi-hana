@@ -26,13 +26,13 @@
 }
 .equipe__boites {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18vw, 80%));
   gap: 2.5vw;
   margin: 3vw 6vw;
+  position: relative;
+  left: 8vw;
 }
 .equipe__boites__boite {
-  transition-property: transform;
-  transition-duration: 0.2s;
   width: 100%;
   background-color: white;
   display: block;
@@ -42,6 +42,10 @@
   box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.26);
+  transition: 0.3s;
+}
+.equipe__boites__boite:hover {
+  width: 105%;
 }
 .equipe__boites__boite__image {
   width: 100%;
@@ -49,14 +53,52 @@
 }
 .equipe__boites__boite__titre {
   margin: 1vw;
-  font-size: 2vw;
+  font-size: 5vw;
 }
 .equipe__boites__boite__phrase {
   margin: 1vw;
+  font-size: 4.5vw;
   padding: 0;
 }
-.equipe__boites__boite:hover {
-  transform: scale(1.05);
+.equipe__modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.equipe__modal__content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+.equipe__modal__content__close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+.equipe__modal__content__close:hover, .equipe__modal__content__close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.equipe__modal__content__image {
+  width: 100%;
+}
+.equipe__modal__content__titre {
+  font-size: 4vw;
+}
+.equipe__modal__content__texte {
+  font-size: 2.2vw;
 }
 
 .histoire {
@@ -76,20 +118,45 @@
   width: 100%;
 }
 
-/* @media screen and ( min-width: 768px ) {
-    .a_propos {
-        margin-top: 0px;
-        font-size: 2vw;
-
-        &__titre {
-            font-size: 5vw;
-        }
-
-        h3 {
-            font-size: 4vw;
-        }
-    }
-}*/
+@media screen and (min-width: 375px) {
+  .equipe__boites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18vw, 48.5%));
+    gap: 2.5vw;
+    margin: 3vw 6vw;
+    position: inherit;
+  }
+  .equipe__boites__boite__titre {
+    font-size: 3.5vw;
+  }
+  .equipe__boites__boite__phrase {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .equipe__boites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
+    gap: 2.5vw;
+    margin: 3vw 6vw;
+    position: inherit;
+  }
+  .equipe__boites__boite__titre {
+    font-size: 2vw;
+  }
+  .equipe__boites__boite__phrase {
+    font-size: 1.5vw;
+  }
+  .equipe__modal__content {
+    width: 30%;
+  }
+  .equipe__modal__content__titre {
+    font-size: 2.5vw;
+  }
+  .equipe__modal__content__texte {
+    font-size: 1.5vw;
+  }
+}
 @media screen and (min-width: 1200px) {
   .a_propos h3 {
     font-size: 3vw;

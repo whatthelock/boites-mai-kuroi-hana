@@ -49,16 +49,18 @@ function add_style_and_js()
 	  1. 'default' = ID de référence à donner au à la feuille de style
 		2. get_template_directory_uri() . '/style.css' = Chemin où ce trouve le fichier CSS en question
 	*/
+
+    if (is_page_template('index.php')) {
+        wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
+        wp_enqueue_style('index', get_template_directory_uri() . '/styles/style_index.css' . $debug);
+    }
     wp_enqueue_style('styles', get_template_directory_uri() . '/styles/style.css' . $debug);
     //
     wp_enqueue_style('footer', get_template_directory_uri() . '/styles/style_footer.css' . $debug);
     wp_enqueue_style('menu', get_template_directory_uri() . '/styles/style_menu.css' . $debug);
+    wp_enqueue_style('hero', get_template_directory_uri() . '/styles/style_hero.css' . $debug);
 
-    if (is_page_template('index.php')) {
-        wp_enqueue_style('index', get_template_directory_uri() . '/styles/style_index.css' . $debug);
-        wp_enqueue_style('hero', get_template_directory_uri() . '/styles/style_hero.css' . $debug);
-        wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' . $debug);
-    }
+
 
     if (is_page_template('about.php')) {
         wp_enqueue_style('a-propos', get_template_directory_uri() . '/styles/style_a_propos.css' . $debug);
@@ -69,12 +71,23 @@ function add_style_and_js()
     }
 
     if (is_page_template('news-hub.php')) {
-        wp_enqueue_style('liste_produit', get_template_directory_uri() . '/styles/style_liste_produits.css' . $debug);
-        wp_enqueue_style('hero', get_template_directory_uri() . '/styles/style_hero.css' . $debug);
+        wp_enqueue_style('liste_news', get_template_directory_uri() . '/styles/style_liste_produits.css' . $debug);
+    }
+
+    if (is_page_template('contact.php')) {
+        wp_enqueue_style('contact', get_template_directory_uri() . '/styles/style_contact.css' . $debug);
     }
 
     if (is_page_template('404.php')) {
         wp_enqueue_style('404', get_template_directory_uri() . '/styles/style_erreur_404.css' . $debug);
+    }
+
+    if (is_page_template('produit.php')) {
+        wp_enqueue_style('produit', get_template_directory_uri() . '/styles/style_produit.css' . $debug);
+    }
+
+    if (is_page_template('news.php')) {
+        wp_enqueue_style('news', get_template_directory_uri() . '/styles/style_nouvelle.css' . $debug);
     }
 
 
@@ -92,10 +105,9 @@ function add_style_and_js()
 
     // wp_enqueue_script('default', get_template_directory_uri() . '/main.js');
 
-    // if (is_page_template('index.php')) {
-    //     wp_enqueue_script('swiper_js', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js');
-    //     wp_enqueue_script('AHHH', get_template_directory_uri() . '/scripts/script_index.js');
-    // }
+    if (is_page_template('about.php')) {
+        //wp_enqueue_script('AHHH', get_template_directory_uri() . '/script_a_propos.js');
+    }
 
     // if (is_page_template('404.php')) {
     //     wp_enqueue_script('swiper_js', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js');

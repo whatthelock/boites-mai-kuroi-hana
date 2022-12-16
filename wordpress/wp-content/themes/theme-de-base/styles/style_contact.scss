@@ -1,0 +1,171 @@
+@use "partials/variables";
+
+* { 
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+.content {
+    margin: 10px;
+
+    h1 {
+        margin-left: 20px;
+        font-size: 4vw;
+    }
+
+    &__form {
+        background-color: #ecf6e880;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        gap: 2%;
+        margin: 15px;
+
+        background-color: #ecf6e880;
+        padding: 20px;
+        border-radius: 20px;
+
+        &__btn {
+            background-color: #F37364;
+            width: 100%;
+            padding: 1vh;
+            border-radius: 40px;
+            border: none;
+            color: white;
+        }
+    }
+
+    &__media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__underline {
+            text-decoration: none;
+            color: black;
+            border-bottom: none;
+            transition: 0.4s ease-in-out;
+        }
+
+        &__underline:hover {
+            border-bottom: 1px solid black;
+        }
+    }
+
+    &__map {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & p {
+        margin: 0 0 10px 0;
+        
+    }
+
+    & .responsive-iframe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__mailTxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+input[type=text] {
+    border: none;
+    height: 2.5vw;
+    width: fill;
+    box-shadow: 2px 2px 0px rgb(201, 201, 201);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin: 8px 8px 10px 0px;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+    
+}
+
+
+
+.socials {
+    height: 3vw;
+    margin: 0.3vw;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .content {
+        margin: 0;
+        padding: 0;
+
+
+
+        p {
+            font-size: 4.4vw;
+        }
+
+        input[type=text] {
+            height: 5vw;
+        }
+
+        label {
+            font-size: 4.4vw;
+        }
+
+        &__mailTxt {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        h1 {
+            font-size: 7vw;
+        }
+
+        p {
+            font-size: 3.4vw;
+            text-align: center;
+        }
+
+        &__grid {
+            display: block;
+        }
+
+        &__mailTxt {
+            text-align: center;
+        }
+    }
+    input[type=text] {
+        height: 5.5vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+
+        &__mailTxt {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+}

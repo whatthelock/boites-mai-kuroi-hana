@@ -35,22 +35,16 @@
 
     <header>
         <?php
-        if (is_page_template('index.php') || is_page_template('news-hub.php')) { ?>
+        if (!is_page_template('single.php')) { ?>
 
             <header>
-                <div class="hero" <?php if (is_page_template('news-hub.php')) { ?> style="height:55vh; <?php } ?> ">
+                <div class="hero" <?php if (!is_page_template('index.php')) { ?> style="height:55vh; <?php } ?> ">
                     <div class="hero__container">
                         <div class="hero__content">
 
-                            <?php
-                            if (is_page_template('news-hub.php')) { ?>
-                                <h2 class="hero__content__title">Blog</h2>
-                            <?php
-                            }
-                            ?>
-
-
-
+                            <?php if (!is_page_template('index.php')) { ?>
+                                <h2 class="hero__content__title"><?php the_title(); ?></h2>
+                            <?php } ?>
 
                             <?php
                             if (is_page_template('index.php')) { ?>

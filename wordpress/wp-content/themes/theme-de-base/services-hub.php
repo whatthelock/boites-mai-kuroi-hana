@@ -7,7 +7,10 @@
 
 get_header(); // Affiche header.php
 
-$products = new WP_Query('post_type=produit');
+$products = new WP_Query(array(
+    'post_type' => 'produit',
+    'posts_per_page' => -1,
+));
 
 //var_dump(print_r($products));
 ?>
@@ -22,8 +25,13 @@ $products = new WP_Query('post_type=produit');
             ?>
                     <!--<pre><?php //print_r($product); 
                                 ?></pre>-->
-                    <div class="boites__boite">
-                        <a class="boites__boite__content" href="#">
+
+
+
+                    <!-- <div class="boites__boite">
+                        <a class="boites__boite__content" href="<?php the_permalink() ?>">
+                            <?php // echo $products; 
+                            ?>
                             <img class="boites__boite__content__image" src="<?php the_field('image_principale'); ?>" alt="Boite Hélène">
 
                             <div class="boites__boite__content__info">
@@ -31,6 +39,25 @@ $products = new WP_Query('post_type=produit');
                                 <div class="boites__boite__content__info__txt">
                                     <?php the_content(); ?>
                                 </div>
+                                <b>
+                                    <p class="boites__boite__content__info__prix"><?php the_field('prix'); ?></p>
+                                </b>
+                            </div>
+                            <div class="boites__boite__content__btn">
+                                Acheter
+                            </div>
+                        </a>
+                    </div> -->
+
+
+
+                    <div class="boites__boite">
+                        <a class="boites__boite__content" href="<?php the_permalink() ?>">
+                            <img class="boites__boite__content__image" src="<?php the_field('image_principale'); ?>" alt="Boite Hélène">
+
+                            <div class="boites__boite__content__info">
+                                <h3 class="boites__boite__content__info__titre"><?php the_title(); ?></h3>
+                                <div class="boites__boite__content__info__txt"><?php the_content(); ?></div>
                                 <b>
                                     <p class="boites__boite__content__info__prix"><?php the_field('prix'); ?></p>
                                 </b>

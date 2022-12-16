@@ -12,7 +12,6 @@ get_header(); // Affiche header.php
 // Est-ce que nous avons des posts qui correspondent à notre requête ?
 // Dans le cas de la page d'accueil, les billets les plus récents serons affichés
 ?>
-
 <div class="content">
     <h2>Gazon</h2>
     <div class="content__graphs">
@@ -152,10 +151,18 @@ get_header(); // Affiche header.php
                 <!-- If we need navigation buttons -->
 
             </div>
+
+
+
+        </div>
+
+        <div class="content_sponsor" style="padding: 20px;">
+            <h2 style="margin:70px;" class="pret">Nos Partenaires</h2>
+            <img src="http://localhost/boites-mai-kuroi-hana/wordpress/wp-content/uploads/2022/12/logo.png" style="width:100%;">
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="http://localhost/boites-mai-kuroi-hana/wordpress/wp-content/themes/theme-de-base/styles/script_index.js"></script>
+    <script src="http://localhost/boites-mai-kuroi-hana/wordpress/wp-content/themes/theme-de-base/script_index.js"></script>
 </div>
 <?php get_footer(); // Affiche footer.php 
 ?>

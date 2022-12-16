@@ -16,6 +16,7 @@
     grid-template-columns:  repeat(auto-fit, minmax(18vw, 100%)); 
     gap: 2.5vw;
     margin: 3vw 6vw;
+    
 
     &__boite {
         width: 100%; 
@@ -26,37 +27,34 @@
         box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
             -webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
             -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.26);
-        position: relative;
+        transition: transform 0.1s linear;
+        overflow: hidden;
 
         &__content {
             /* max-width: 20vw; */
             // min-height: 27rem;
             text-decoration: none;
             color: black;
-            height: 100%;
 
             &__image {
                 width: 100%;
-                border-top-left-radius: 40px;
             }
 
             &__info {
+                padding: 2vw;
+
                 &__titre {
-                    margin: 1vw; 
                     font-size: 165%;
+                    margin: 0;
                 }
 
                 &__txt {
-                    margin: 1vw 1vw 0.1vw 0.5vw;
-                    margin-left: 1vw;
-                    margin-right: 1vw;
                     padding: 0;
-                    max-height: 200px;
+                    margin: 0;
                     overflow: hidden;
-
-                    p{
-                        margin: 0;
-                    }
+                    
+                    height: 200px;
+                    overflow: hidden;
                 }
 
                 &__prix {
@@ -72,12 +70,12 @@
                 color: white;
                 padding: 1vh 1vw;
                 margin: 0 1vw 2vh 1vw;
-                bottom: 0;
+                position: relative;
             }
         }
     }
-    &__content {
-        padding: 2vw;
+    &__boite:hover {
+        transform: scale(105%);
     } 
 }
 

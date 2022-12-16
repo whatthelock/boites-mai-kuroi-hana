@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+.content {
+  margin: 10px;
+}
+.content h1 {
+  margin-left: 20px;
+  font-size: 4vw;
+}
+.content__form {
+  background-color: rgba(236, 246, 232, 0.5019607843);
+  padding: 20px;
+  border-radius: 20px;
+}
+.content__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 2%;
+  margin: 15px;
+  background-color: rgba(236, 246, 232, 0.5019607843);
+  padding: 20px;
+  border-radius: 20px;
+}
+.content__grid__btn {
+  background-color: #F37364;
+  width: 100%;
+  padding: 1vh;
+  border-radius: 40px;
+  border: none;
+  color: white;
+}
+.content__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content__media__underline {
+  text-decoration: none;
+  color: black;
+  border-bottom: none;
+  transition: 0.4s ease-in-out;
+}
+.content__media__underline:hover {
+  border-bottom: 1px solid black;
+}
+.content__map {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content p {
+  margin: 0 0 10px 0;
+}
+.content .responsive-iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.content__mailTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content input[type=text] {
+  border: none;
+  height: 2.5vw;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
+  box-shadow: 2px 2px 0px rgb(201, 201, 201);
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin: 8px 8px 10px 0px;
+  border-radius: 5px;
+  text-indent: 10px;
+}
+
+.socials {
+  height: 3vw;
+  margin: 0.3vw;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.socials:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    margin: 0;
+    padding: 0;
+  }
+  .content p {
+    font-size: 4.4vw;
+  }
+  .content input[type=text] {
+    height: 5vw;
+  }
+  .content label {
+    font-size: 4.4vw;
+  }
+  .content__mailTxt {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 7vw;
+  }
+  .content p {
+    font-size: 3.4vw;
+    text-align: center;
+  }
+  .content__grid {
+    display: block;
+  }
+  .content__mailTxt {
+    text-align: center;
+  }
+  input[type=text] {
+    height: 5.5vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .content__mailTxt {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style_contact.css.map */
